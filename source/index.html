@@ -21,22 +21,87 @@
     <a class="header__link" href="#">
       <img class="header__logo-image logo-image" src="img/logo-mobile.svg" alt="Логотип Lifetour" width="142" height="42">
     </a>
-
     <nav class="header__navigation navigation">
+      <button class="navigation__button" type="button">кнопка выпадающего меню навигации</button>
       <ul class="navigation__list">
-        <li class="navigation__list-item">Туры</li>
-        <li class="navigation__list-item">Обучение</li>
-        <li class="navigation__list-item">О нас</li>
-        <li class="navigation__list-item">Отзывы</li>
-        <li class="navigation__list-item">Фотографии</li>
-        <li class="navigation__list-item">Фотографии</li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="#">Туры</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="#">Обучение</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="#">О нас</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="#">Отзывы</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="#">Фотографии</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="#">Контакты</a>
+        </li>
       </ul>
     </nav>
 
     <a class="header__link" href="tel:+88000000000">8 800 000-00-00</a>
 
   </header>
+  <main class="body__main">
+    <section class="main__hero hero">
 
+      <div class="hero__swiper swiper-container">
+        <ul class="hero__list swiper-wrapper">
+          <li class="hero__list-item swiper-slide">
+            <h2>Захватывающие вершины Кавказа</h2>
+            <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+            <a class="hero__link" href="#">
+              Смотреть тур
+            </a>
+          </li>
+          <li class="hero__list-item swiper-slide">
+            <h2>Невероятная
+              природа Камчатки</h2>
+            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+            <a class="hero__link" href="#">
+              Смотреть тур
+            </a>
+            <!-- <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348">
+              <img class="" src="img/games/games-mobile@1x.webp" srcset="img/games/games-mobile@2x.webp" alt="" width="290" height="290">
+            </picture> -->
+            <!-- <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348">
+              <img class="games-card__image" src="img/games/games-mobile@1x.webp" srcset="img/games/games-mobile@2x.webp" alt="" width="290" height="290">
+            </picture> -->
+          </li>
+          <li class="hero__list-item swiper-slide">
+            <h2>Захватывающие вершины Кавказа</h2>
+            <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+            <a class="hero__link" href="#">
+              Смотреть тур
+            </a>
+          </li>
+          <li class="hero__list-item swiper-slide">
+            <h2>Магические пейзажи Алтайского Края</h2>
+            <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
+            <a class="hero__link" href="#">
+              Смотреть тур
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- <button class="swiper-button-prev" type="button">
+      </button>
+      <button class="swiper-button-next" type="button" disabled>
+      </button>
+ -->
+    </section>
+
+  </main>
   <div data-test="hero">hero</div>
   <div data-test="tours">tours</div>
   <div data-test="training">training</div>

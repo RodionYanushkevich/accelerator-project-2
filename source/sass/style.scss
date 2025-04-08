@@ -1,4 +1,74 @@
-// Vendor
-// ---------------------------------
+
+
+/* GLOBAL */
+// @import "./common/mixins";
+// @import "./common/variables";
+// @import "./common/fonts";
+// @import "./common/global";
+// @import "./common/visually-hidden";
 
 @import "vendor/normalize";
+
+// @import "./vendor/swiper.css";
+
+// /* OTHERS */
+// @import "./blocks/others/button";
+// @import "./blocks/others/more-link";
+// @import "./blocks/others/slider-button";
+
+// /* BlOCKS */
+@import "./blocks/page/page.scss";
+@import "./blocks/body/body.scss";
+// @import "./blocks/title/title";
+
+// /* HEADER */
+// @import "./blocks/header/header";
+
+// /* HERO */
+// @import "./blocks/hero/hero";
+
+// /* ABOUT */
+// @import "./blocks/about/about";
+
+// /* PRICE */
+// @import "./blocks/price/price";
+// @import "./blocks/price/price-card";
+
+// /* JURI */
+// @import "./blocks/juri/jury";
+// @import "./blocks/juri/slider/slider";
+// @import "./blocks/juri/slide-hover";
+
+// /* GAMES */
+// @import "./blocks/games/games";
+// @import "./blocks/games/games-card";
+// @import "./blocks/games/date-time";
+
+// /* FEATURES */
+// @import "./blocks/features/features";
+
+// /* OFFERS */
+// @import "./blocks/offers/offers";
+// @import "./blocks/offers/offers-big-card";
+// @import "./blocks/offers/offers-small-card";
+
+// /* FAQ */
+// @import "./blocks/faq/faq";
+// @import "./blocks/faq/faq-buttons";
+// @import "./blocks/faq/accordion";
+
+// /* REVIEWS */
+// @import "./blocks/reviews/reviews";
+// @import "./blocks/reviews/reviews-slider";
+
+// /* FORM */
+// @import "./blocks/form-section/form-section";
+// @import "./blocks/form-section/form";
+
+// /* CONTACTS */
+// @import "./blocks/contacts/contacts";
+
+// /* FOOTER */
+// @import "./blocks/footer/footer";
+// @import "./blocks/footer/navigation";
+// @import "./blocks/footer/social";
