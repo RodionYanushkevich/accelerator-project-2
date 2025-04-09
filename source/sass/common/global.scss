@@ -14,20 +14,19 @@ body {
 
   color: $base-primary;
 
-  // background-color: $base-white;
+  background-color: $base-white;
 }
 
-// img {
-//   display: block;
-//   object-fit: contain;
-// }
+img {
+  display: block;
+  object-fit: contain;
+}
 
-// html {
-//   scroll-behavior: smooth;
-// }
+html {
+  scroll-behavior: smooth;
+}
 
-// a,
-// li,
-// button {
-//   -webkit-tap-highlight-color: transparent;
-// }
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}

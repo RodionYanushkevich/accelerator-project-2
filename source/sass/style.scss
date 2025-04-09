@@ -5,7 +5,8 @@
 @import "./common/global";
 @import "./common/visually-hidden";
 
-// /* OTHERS */
+/* OTHERS */
+
 // @import "./blocks/others/button";
 // @import "./blocks/others/more-link";
 // @import "./blocks/others/slider-button";
@@ -16,8 +17,9 @@
 
 // @import "./blocks/title/title";
 
-// /* HEADER */
-// @import "./blocks/header/header";
+/* HEADER */
+@import "./blocks/header/header";
+@import "./blocks/header/navigation";
 
 // /* HERO */
 // @import "./blocks/hero/hero";
