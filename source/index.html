@@ -49,7 +49,7 @@
 
   </header>
   <main class="body__main main">
-    <section class="main__hero hero">
+    <section class="main__hero hero" data-test="hero">
       <h1 class="visually-hidden">Туризм с Lifetour</h1>
 
       <div class="hero__swiper swiper-container">
@@ -384,7 +384,7 @@
 
     </section>
 
-    <section class="advantages" data-test="adv">
+    <section class="main__advantages advantages" data-test="adv">
       <h2 class="advantages__title title">Преимущества</h2>
       <div class="advantages__swiper swiper-container">
         <ul class="advantages__list swiper-wrapper">
@@ -423,12 +423,110 @@
           <span class="visually-hidden">Следующий слайд</span>
         </button>
       </div>
+    </section>
+
+    <section class="main__gallery gallery" data-test="gallery">
+      <h2 class="gallery__title title">Фотогалерея</h2>
+      <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+
+      <div class="gallery__swiper swiper-container">
+        <ul class="gallery__list swiper-wrapper">
+          <!-- пока пропустим -->
+          <!-- слайд 1 -->
+          <li class="gallery__list-item gallery-card swiper-slide">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width:1440px)" srcset="img/gallery/gallery-desktop@1x.webp 1x, img/gallery/gallery-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/gallery-tablet@1x.webp 1x, img/gallery/gallery-tablet@2x.webp 2x" width="378" height="348"> -->
+              <img src="img/gallery/gallery-mobile@1x.webp" srcset="img/gallery/games-mobile@2x.webp" alt="" width="157" height="266">
+            </picture>
+          </li>
+        </ul>
+
+        <button class="swiper-button-prev" type="button">
+          <span class="visually-hidden">Предидущий слайд</span>
+        </button>
+        <button class="swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </div>
 
     </section>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
+    <section class="main__form-section form-section" data-test="form">
+      <h2 class="form-section__title">Остались вопросы?</h2>
+      <p class="form-section__description">Заполните форму и наш оператор  свяжется с вами для консультации.</p>
+
+      <form class="form-section__form form" method="post" action="https://echo.htmlacademy.ru">
+
+        <label class="form__label visually-hidden" for="phone-number">поле ввода номера телефона</label>
+        <input class="form__input" type="text" id="phone-number" name="phone-number" required autocomplete="off" placeholder="Телефон" pattern="[0-9\-\s]+">
+
+        <label class="form__label visually-hidden" for="email">поле ввода email</label>
+        <input class="form__input" type="email" id="email" name="email" required autocomplete="off" placeholder="Email">
+
+      </form>
+    </section>
   </main>
-  <div data-test="footer">footer</div>
+
+  <footer class="page__footer footer-section" data-test="footer">
+
+    <div class="footer-section__contacts contacts">
+      <h2 class="contacts__title title">Контакты</h2>
+      <p class="contacts__description">Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+
+      <ul class="contacts__list">
+        <li class="contacts__list-item">
+          <h3 class="contacts__item-title">Телефон:</h3>
+          <a class="contacts__item-description contacts__link" href="tel:+79837454545">+7 983 745-45-45</a>
+        </li>
+
+        <li class="contacts__list-item">
+          <h3 class="contacts__item-title">Email:</h3>
+          <a class="contacts__item-description contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+        </li>
+
+        <li class="contacts__list-item">
+          <h3 class="contacts__item-title">Адрес:</h3>
+          <address class="contacts__item-description">г. Москва, пр-т Мира,  д. 14, офис 101</address>
+        </li>
+      </ul>
+
+      <picture>
+        <!-- <source type="image/webp" media="(min-width:1440px)" srcset="img/gallery/gallery-desktop@1x.webp 1x, img/gallery/gallery-desktop@2x.webp 2x" width="660" height="500">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/gallery-tablet@1x.webp 1x, img/gallery/gallery-tablet@2x.webp 2x" width="378" height="348"> -->
+        <img src="img/contacts/contacts-mobile@1x.webp" srcset="img/contacts/contacts-mobile@2x.webp" alt="" width="320" height="343">
+      </picture>
+
+    </div>
+    <div class="footer-section__footer footer">
+
+      <img class="footer__logo-image" src="img/logo-mobile.svg" alt="Логотип Lifetour" width="142" height="42">
+
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer-navigation__list-item">
+            <a class="footer-navigation__link" href="#">Туры</a>
+          </li>
+          <li class="footer-navigation__list-item">
+            <a class="footer-navigation__link" href="#">Обучение</a>
+          </li>
+          <li class="footer-navigation__list-item">
+            <a class="footer-navigation__link" href="#">О нас</a>
+          </li>
+          <li class="footer-navigation__list-item">
+            <a class="footer-navigation__link" href="#">Отзывы</a>
+          </li>
+          <li class="footer-navigation__list-item">
+            <a class="footer-navigation__link" href="#">Фотографии</a>
+          </li>
+          <li class="footer-navigation__list-item">
+            <a class="footer-navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
   <script type="module" src="js/main.js"></script>
 </body>
 
