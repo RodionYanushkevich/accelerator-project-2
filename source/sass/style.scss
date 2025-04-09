@@ -2,12 +2,13 @@
 
 /* GLOBAL */
 // @import "./common/mixins";
-// @import "./common/variables";
-// @import "./common/fonts";
-// @import "./common/global";
-// @import "./common/visually-hidden";
+@import "./common/variables";
 
-@import "vendor/normalize";
+// @import "./common/fonts";
+@import "./common/global";
+@import "./common/visually-hidden";
+
+// @import "vendor/normalize";
 
 // @import "./vendor/swiper.css";
 
@@ -17,8 +18,9 @@
 // @import "./blocks/others/slider-button";
 
 // /* BlOCKS */
-@import "./blocks/page/page.scss";
-@import "./blocks/body/body.scss";
+@import "./blocks/page/page";
+@import "./blocks/body/body";
+
 // @import "./blocks/title/title";
 
 // /* HEADER */
