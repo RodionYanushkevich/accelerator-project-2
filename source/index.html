@@ -48,23 +48,24 @@
     <a class="header__link" href="tel:+88000000000">8 800 000-00-00</a>
 
   </header>
-  <main class="body__main">
+  <main class="body__main main">
     <section class="main__hero hero">
+      <h1 class="visually-hidden">Туризм с Lifetour</h1>
 
       <div class="hero__swiper swiper-container">
         <ul class="hero__list swiper-wrapper">
-          <li class="hero__list-item swiper-slide">
+          <li class="hero__list-item hero-card swiper-slide">
             <h2>Захватывающие вершины Кавказа</h2>
             <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-            <a class="hero__link" href="#">
+            <a class="hero-card__link" href="#">
               Смотреть тур
             </a>
           </li>
-          <li class="hero__list-item swiper-slide">
+          <li class="hero__list-item hero-card swiper-slide">
             <h2>Невероятная
               природа Камчатки</h2>
             <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-            <a class="hero__link" href="#">
+            <a class="hero-card__link" href="#">
               Смотреть тур
             </a>
             <!-- <picture>
@@ -78,37 +79,157 @@
               <img class="games-card__image" src="img/games/games-mobile@1x.webp" srcset="img/games/games-mobile@2x.webp" alt="" width="290" height="290">
             </picture> -->
           </li>
-          <li class="hero__list-item swiper-slide">
+          <li class="hero__list-item hero-card swiper-slide">
             <h2>Захватывающие вершины Кавказа</h2>
             <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-            <a class="hero__link" href="#">
+            <a class="hero-card__link" href="#">
               Смотреть тур
             </a>
           </li>
-          <li class="hero__list-item swiper-slide">
+          <li class="hero__list-item hero-card swiper-slide">
             <h2>Магические пейзажи Алтайского Края</h2>
             <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
-            <a class="hero__link" href="#">
+            <a class="hero-card__link" href="#">
               Смотреть тур
             </a>
           </li>
         </ul>
+        <!-- <button class="swiper-button-prev" type="button">
+        </button>
+        <button class="swiper-button-next" type="button" disabled>
+        </button>
+        -->
       </div>
-      <!-- <button class="swiper-button-prev" type="button">
-      </button>
-      <button class="swiper-button-next" type="button" disabled>
-      </button>
- -->
     </section>
 
+    <section class="main__tours tours" data-test="tours">
+      <h2 class="tours__title title">Ближайшие туры</h2>
+
+      <div class="tours__swiper swiper-container">
+        <ul class="tours__list swiper-wrapper">
+          <!-- слайд 1 -->
+          <li class="tours__list-item tours-card swiper-slide">
+
+            <div class="tours-card__destination-wrapper">
+              <span class="tours-card__destination-location">Кавказ</span>
+              <span class="tours-card__destination-duration">4 дня</span>
+              <span class="tours-card__destination-duration">3 ночи</span>
+            </div>
+
+            <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
+
+            <dl class="tours-card__details">
+              <dt class="tours-card__details-title">Сложность:</dt>
+              <dd class="tours-card__details-description">
+                <span class="visually-hidden">рейтинг сложности 4 из 5ти</span>
+              </dd>
+
+              <dt class="tours-card__details-title">Даты набора:</dt>
+              <dd class="tours-card__details-description">12.06–19.06</dd>
+
+              <dt class="tours-card__details-title">Группа:</dt>
+              <dd class="tours-card__details-description">до 15 чел.</dd>
+            </dl>
+          </li>
+
+          <!-- слайд 2 -->
+          <li class="tours__list-item tours-card swiper-slide">
+
+            <div class="tours-card__destination-wrapper">
+              <span class="tours-card__destination-location">Алтай</span>
+              <span class="tours-card__destination-duration">14 дней</span>
+              <span class="tours-card__destination-duration">13 ночей</span>
+            </div>
+
+            <h3 class="tours-card__title">Путь к подножию Белухи</h3>
+
+            <dl class="tours-card__details">
+              <dt class="tours-card__details-title">Сложность:</dt>
+              <dd class="tours-card__details-description">
+                <span class="visually-hidden">рейтинг сложности 4 из 5ти</span>
+              </dd>
+
+              <dt class="tours-card__details-title">Даты набора:</dt>
+              <dd class="tours-card__details-description">14.06–23.06</dd>
+
+              <dt class="tours-card__details-title">Группа:</dt>
+              <dd class="tours-card__details-description">до 25 чел.</dd>
+            </dl>
+          </li>
+          <!-- Слайд 3 -->
+          <li class="tours__list-item tours-card swiper-slide">
+
+            <div class="tours-card__destination-wrapper">
+              <span class="tours-card__destination-location">Адыгея</span>
+              <span class="tours-card__destination-duration">7 дней</span>
+              <span class="tours-card__destination-duration">6 ночей</span>
+            </div>
+
+            <h3 class="tours-card__title">Через Фишт
+              к Чёрному морю и обратно</h3>
+
+            <dl class="tours-card__details">
+              <dt class="tours-card__details-title">Сложность:</dt>
+              <dd class="tours-card__details-description">
+                <span class="visually-hidden">рейтинг сложности 4 из 5ти</span>
+              </dd>
+
+              <dt class="tours-card__details-title">Даты набора:</dt>
+              <dd class="tours-card__details-description">15.07–19.07</dd>
+
+              <dt class="tours-card__details-title">Группа:</dt>
+              <dd class="tours-card__details-description">до 22 чел.</dd>
+            </dl>
+          </li>
+
+          <!-- Слайд 4 -->
+          <li class="tours__list-item tours-card swiper-slide">
+
+            <div class="tours-card__destination-wrapper">
+              <span class="tours-card__destination-location">Урал</span>
+              <span class="tours-card__destination-duration">9 дней</span>
+              <span class="tours-card__destination-duration">10 ночей</span>
+            </div>
+
+            <h3 class="tours-card__title">Восхождение
+              Манарага</h3>
+
+            <dl class="tours-card__details">
+              <dt class="tours-card__details-title">Сложность:</dt>
+              <dd class="tours-card__details-description">
+                <span class="visually-hidden">рейтинг сложности 5 из 5ти</span>
+              </dd>
+
+              <dt class="tours-card__details-title">Даты набора:</dt>
+              <dd class="tours-card__details-description">12.07–19.07</dd>
+              ц
+              <dt class="tours-card__details-title">Группа:</dt>
+              <dd class="tours-card__details-description">до 7 чел.</dd>
+            </dl>
+          </li>
+
+        </ul>
+
+        <button class="swiper-button-prev" type="button">
+          <span class="visually-hidden">Предидущий слайд</span>
+        </button>
+        <button class="swiper-button-next" type="button">
+          <span class="visually-hidden">Пледующий слайд</span>
+        </button>
+
+      </div>
+
+      <a class="tours__link" href="#">Показать все туры</a>
+
+    </section>
+
+    <div data-test="training">training</div>
+    <div data-test="about">about</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="adv">adv</div>
+    <div data-test="gallery">gallery</div>
+    <div data-test="form">form</div>
   </main>
-  <div data-test="tours">tours</div>
-  <div data-test="training">training</div>
-  <div data-test="about">about</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="adv">adv</div>
-  <div data-test="gallery">gallery</div>
-  <div data-test="form">form</div>
   <div data-test="footer">footer</div>
   <script type="module" src="js/main.js"></script>
 </body>
