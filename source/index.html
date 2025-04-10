@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/montserrat/montserrat-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat/montserrat-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <title>Lifetour</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
@@ -319,16 +325,17 @@
 
           <!-- слайд 1 -->
           <li class="reviews__list-item reviews-card swiper-slide">
-            <img src="img/reviews/reviews-frolov@1x.webp" srcset="img/reviews/reviews-frolov@2x.webp" alt="фотография сидячего мужчины на фоне гор" width="250" height="169">
+            <img src="img/reviews/reviews-frolov@1x.webp" srcset="img/reviews/reviews-frolov@2x.webp" alt="фотография мужчины на фоне гор" width="250" height="169">
 
             <blockquote>
               <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
               </p>
               <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
             </blockquote>
-
-            <h3 class="reviews-card__title">Фролов Александр</h3>
-            <p class="reviews-card__description">38 лет, Москва</p>
+            <div class="reviews-card__wrapper">
+              <h3 class="reviews-card__title">Фролов Александр</h3>
+              <p class="reviews-card__description">38 лет, Москва</p>
+            </div>
           </li>
 
           <!-- слайд 2 -->
