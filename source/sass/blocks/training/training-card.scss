@@ -1,0 +1,59 @@
+.training-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 15px;
+
+  width: 290px;
+}
+
+.training-card:not(:first-child) {
+  display: none;
+}
+
+
+.training-card__figure {
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+  flex-grow: 1;
+}
+
+.training-card__image {
+  color: $base-white;
+  background-color: #b4b2b3;
+}
+
+.training-card__figure h4 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+}
+
+.training-card__figure figcaption {
+  width: min-content;
+}
+
+.training-card__figure-link {
+  box-sizing: border-box;
+  display: block;
+  height: 24px;
+  width: 24px;
+
+  border: 1px solid $base-primary;
+}
+
+.training-card p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 133%;
+}

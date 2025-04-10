@@ -7,7 +7,8 @@
 
 /* OTHERS */
 
-// @import "./blocks/others/button";
+@import "./blocks/others/title";
+
 // @import "./blocks/others/more-link";
 // @import "./blocks/others/slider-button";
 
@@ -21,14 +22,19 @@
 @import "./blocks/header/header";
 @import "./blocks/header/navigation";
 
-// /* HERO */
-// @import "./blocks/hero/hero";
+/* HERO */
+@import "./blocks/hero/hero";
+@import "./blocks/hero/hero-card";
 
-// /* ABOUT */
-// @import "./blocks/about/about";
+/* TOURS */
+@import "./blocks/tours/tours";
+@import "./blocks/tours/tours-card";
 
-// /* PRICE */
-// @import "./blocks/price/price";
+/* PRICE */
+@import "./blocks/training/training";
+@import "./blocks/training/training-card";
+@import "./blocks/training/training-proces";
+
 // @import "./blocks/price/price-card";
 
 // /* JURI */
