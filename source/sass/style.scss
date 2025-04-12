@@ -16,8 +16,6 @@
 @import "./blocks/page/page";
 @import "./blocks/body/body";
 
-// @import "./blocks/title/title";
-
 /* HEADER */
 @import "./blocks/header/header";
 @import "./blocks/header/navigation";
@@ -38,41 +36,23 @@
 /* ABOUT */
 @import "./blocks/about/about";
 
-// /* REVIEWS */
+/* REVIEWS */
 @import "./blocks/reviews/reviews";
 @import "./blocks/reviews/reviews-card";
 
-// /* ADVANTAGES */
+/* ADVANTAGES */
 @import "./blocks/advantages/advantages";
-@import "./blocks/advantages/advantages-card.scss";
+@import "./blocks/advantages/advantages-card";
 
-// /* GAMES */
-// @import "./blocks/games/games";
-// @import "./blocks/games/games-card";
-// @import "./blocks/games/date-time";
+/* GALLERY */
+@import "./blocks/gallery/gallery";
+@import "./blocks/gallery/gallery-card";
 
-// /* FEATURES */
-// @import "./blocks/features/features";
+/* FORM */
+@import "./blocks/form-section/form-section";
+@import "./blocks/form-section/form";
 
-// /* OFFERS */
-// @import "./blocks/offers/offers";
-// @import "./blocks/offers/offers-big-card";
-// @import "./blocks/offers/offers-small-card";
-
-// /* FAQ */
-// @import "./blocks/faq/faq";
-// @import "./blocks/faq/faq-buttons";
-// @import "./blocks/faq/accordion";
-
-
-// /* FORM */
-// @import "./blocks/form-section/form-section";
-// @import "./blocks/form-section/form";
-
-// /* CONTACTS */
-// @import "./blocks/contacts/contacts";
-
-// /* FOOTER */
-// @import "./blocks/footer/footer";
-// @import "./blocks/footer/navigation";
-// @import "./blocks/footer/social";
+/* Footer */
+@import "./blocks/footer-section/footer-section";
+@import "./blocks/footer-section/contacts";
+@import "./blocks/footer-section/footer";
