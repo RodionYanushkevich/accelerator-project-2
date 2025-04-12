@@ -1,0 +1,16 @@
+.title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 100%;
+
+  @media ($tablet-breakpoint) {
+    font-size: 25px;
+  }
+
+  @media ($desktop-breakpoint) {
+    font-size: 55px;
+  }
+}

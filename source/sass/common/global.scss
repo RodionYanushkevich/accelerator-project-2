@@ -1,31 +1,33 @@
 // /* здесь используйте глобальные селекторы img, body, html и так далее */
 
-// body {
-//   margin: 0;
-//   padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 
-//   font-family: $primary-family;
-//   font-style: normal;
-//   font-weight: 300;
-//   font-size: 14px;
-//   line-height: 157%;
+  min-width: $mobile;
+  width: 100%;
 
-//   color: $base-primary;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
 
-//   background-color: $base-white;
-// }
+  color: $base-primary;
 
-// img {
-//   display: block;
-//   object-fit: contain;
-// }
+  background-color: $base-white;
+}
 
-// html {
-//   scroll-behavior: smooth;
-// }
+img {
+  display: block;
+  object-fit: contain;
+}
 
-// a,
-// li,
-// button {
-//   -webkit-tap-highlight-color: transparent;
-// }
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,8 @@
+.gallery-card:not(:first-child) {
+  display: none;
+}
+
+.gallery-card img {
+  color: $base-white;
+  background-color: #b4b2b3;
+}

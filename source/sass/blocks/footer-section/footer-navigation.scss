@@ -1,0 +1,22 @@
+.footer-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 15px;
+
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.footer-navigation__list-item {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-navigation__link {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,19 +1,14 @@
-
-
 /* GLOBAL */
-// @import "./common/mixins";
+@import "./common/mixins";
 @import "./common/variables";
-
-// @import "./common/fonts";
+@import "./common/fonts";
 @import "./common/global";
 @import "./common/visually-hidden";
 
-// @import "vendor/normalize";
+/* OTHERS */
 
-// @import "./vendor/swiper.css";
+@import "./blocks/others/title";
 
-// /* OTHERS */
-// @import "./blocks/others/button";
 // @import "./blocks/others/more-link";
 // @import "./blocks/others/slider-button";
 
@@ -21,56 +16,45 @@
 @import "./blocks/page/page";
 @import "./blocks/body/body";
 
-// @import "./blocks/title/title";
+/* HEADER */
+@import "./blocks/header/header";
+@import "./blocks/header/navigation";
 
-// /* HEADER */
-// @import "./blocks/header/header";
+/* HERO */
+@import "./blocks/hero/hero";
+@import "./blocks/hero/hero-card";
 
-// /* HERO */
-// @import "./blocks/hero/hero";
+/* TOURS */
+@import "./blocks/tours/tours";
+@import "./blocks/tours/tours-card";
 
-// /* ABOUT */
-// @import "./blocks/about/about";
+/* TRANING */
+@import "./blocks/training/training";
+@import "./blocks/training/training-card";
+@import "./blocks/training/training-proces";
 
-// /* PRICE */
-// @import "./blocks/price/price";
-// @import "./blocks/price/price-card";
+/* ABOUT */
+@import "./blocks/about/about";
 
-// /* JURI */
-// @import "./blocks/juri/jury";
-// @import "./blocks/juri/slider/slider";
-// @import "./blocks/juri/slide-hover";
+/* REVIEWS */
+@import "./blocks/reviews/reviews";
+@import "./blocks/reviews/reviews-card";
 
-// /* GAMES */
-// @import "./blocks/games/games";
-// @import "./blocks/games/games-card";
-// @import "./blocks/games/date-time";
+/* ADVANTAGES */
+@import "./blocks/advantages/advantages";
+@import "./blocks/advantages/advantages-card";
 
-// /* FEATURES */
-// @import "./blocks/features/features";
+/* GALLERY */
+@import "./blocks/gallery/gallery";
+@import "./blocks/gallery/gallery-card";
 
-// /* OFFERS */
-// @import "./blocks/offers/offers";
-// @import "./blocks/offers/offers-big-card";
-// @import "./blocks/offers/offers-small-card";
+/* FORM */
+@import "./blocks/form-section/form-section";
+@import "./blocks/form-section/form";
 
-// /* FAQ */
-// @import "./blocks/faq/faq";
-// @import "./blocks/faq/faq-buttons";
-// @import "./blocks/faq/accordion";
-
-// /* REVIEWS */
-// @import "./blocks/reviews/reviews";
-// @import "./blocks/reviews/reviews-slider";
-
-// /* FORM */
-// @import "./blocks/form-section/form-section";
-// @import "./blocks/form-section/form";
-
-// /* CONTACTS */
-// @import "./blocks/contacts/contacts";
-
-// /* FOOTER */
-// @import "./blocks/footer/footer";
-// @import "./blocks/footer/navigation";
-// @import "./blocks/footer/social";
+/* Footer */
+@import "./blocks/footer-section/footer-section";
+@import "./blocks/footer-section/contacts";
+@import "./blocks/footer-section/footer";
+@import "./blocks/footer-section/footer-navigation";
+@import "./blocks/footer-section/social";

@@ -1,0 +1,8 @@
+.tours-card {
+  min-height: 416px;
+  width: 100%;
+}
+
+.tours-card:not(:first-child) {
+  display: none;
+}
