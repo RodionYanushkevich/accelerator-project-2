@@ -17,7 +17,11 @@
 
   @media ($desktop-breakpoint) {
     display: flex;
+    flex-wrap: wrap;
     font-weight: 400;
+    gap: 30px;
+    text-transform: unset;
+    letter-spacing: unset;
   }
 }
 

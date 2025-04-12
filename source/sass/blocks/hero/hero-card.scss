@@ -13,15 +13,19 @@
   row-gap: 15px;
   align-items: center;
 
-  background-image: url("../../../img/hero/hero-card1-mobile@1x.webp");
+  background-image: url("/img/hero/hero-card1-mobile@1x.webp");
+  // background-image: url("../../../img/hero/hero-card1-mobile@1x.webp");
   min-height: 568px;
   background-repeat: no-repeat;
   background-size: 100%;
 
   @media ($tablet-breakpoint) {
     justify-content: unset;
+
     padding: 342px 45px 56px;
-    background-image: url("../../../img/hero/hero-card1-tablet@1x.webp");
+    background-image: url("/img/hero/hero-card1-tablet@1x.webp");
+
+    // background-color: red;
     min-height: 1034px;
   }
 
@@ -31,18 +35,18 @@
     row-gap: 25px;
     min-height: 800px;
 
-    background-image: url("../../../img/hero/hero-card1-desktop@1x.webp");
+    background-image: url("/img/hero/hero-card1-desktop@1x.webp");
   }
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../../img/hero/hero-card1-mobile@2x.webp");
+    background-image: url("/img/hero/hero-card1-mobile@2x.webp");
 
     @media ($tablet-breakpoint) {
-      background-image: url("../../../img/hero/hero-card1-tablet@2x.webp");
+      background-image: url("/img/hero/hero-card1-tablet@2x.webp");
     }
 
     @media ($desktop-breakpoint) {
-      background-image: url("../../../img/hero/hero-card1-desktop@2x.webp");
+      background-image: url("/img/hero/hero-card1-desktop@2x.webp");
     }
   }
 }
