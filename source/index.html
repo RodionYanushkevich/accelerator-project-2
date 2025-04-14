@@ -26,7 +26,7 @@
     <a class="header__logo-link" href="#">
       <img class="header__logo-image logo-image" src="img/logo.svg" alt="Логотип Lifetour" width="142" height="42">
     </a>
-    <!-- МЕСТО РАЗЬЕРИСЬ -->
+
     <button class="header__button" type="button">
       <span class="visually-hidden">
         кнопка выпадающего меню навигации</span></button>
@@ -105,25 +105,41 @@
     </section>
 
     <section class="main__tours tours" data-test="tours">
-      <h2 class="tours__title title">Ближайшие туры</h2>
+      <h2 class="tours__title title" data-content="Ближайшие туры">Ближайшие туры</h2>
 
       <div class="tours__swiper swiper-container">
         <ul class="tours__list swiper-wrapper">
           <!-- слайд 1 -->
-          <li class="tours__list-item tours-card swiper-slide">
+          <li class="tours__list-item tours-card tours-card--elbrus swiper-slide">
 
             <div class="tours-card__destination-wrapper">
               <span class="tours-card__destination-location">Кавказ</span>
-              <span class="tours-card__destination-duration">4 дня</span>
-              <span class="tours-card__destination-duration">3 ночи</span>
+              <span class="tours-card__destination-duration tours-card__destination-duration--sun">4 дня</span>
+              <span class="tours-card__destination-duration
+              tours-card__destination-duration--moon">3 ночи</span>
             </div>
 
-            <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
+            <h3 class="tours-card__title">Путешествие <br>вокруг Эльбруса</h3>
 
             <dl class="tours-card__details">
               <dt class="tours-card__details-title">Сложность:</dt>
               <dd class="tours-card__details-description">
                 <span class="visually-hidden">рейтинг сложности 4 из 5ти</span>
+                <svg height="16" width="16">
+                  <use href="__spritemap#sprite-star-icon-fill"></use>
+                </svg>
+                <svg height="16" width="16">
+                  <use href="__spritemap#sprite-star-icon-fill"></use>
+                </svg>
+                <svg height="16" width="16">
+                  <use href="__spritemap#sprite-star-icon-fill"></use>
+                </svg>
+                <svg height="16" width="16">
+                  <use href="__spritemap#sprite-star-icon-fill"></use>
+                </svg>
+                <svg height="16" width="16">
+                  <use href="__spritemap#sprite-star-icon-empty"></use>
+                </svg>
               </dd>
 
               <dt class="tours-card__details-title">Даты набора:</dt>
@@ -226,7 +242,7 @@
     </section>
 
     <section class="main__training training" data-test="training">
-      <h2 class="training__title title">Обучение</h2>
+      <h2 class="training__title title" data-content="Обучение">Обучение</h2>
 
       <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
 
@@ -321,7 +337,7 @@
     </section>
 
     <section class="main__reviews reviews" data-test="reviews">
-      <h2 class="reviews__title title">Отзывы</h2>
+      <h2 class="reviews__title title" data-content="Отзывы">Отзывы</h2>
 
       <div class="reviews__swiper swiper-container">
         <ul class="reviews__list swiper-wrapper">

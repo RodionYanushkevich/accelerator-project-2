@@ -1,8 +1,189 @@
 .tours-card {
+  box-sizing: border-box;
   min-height: 416px;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 30px 20px;
+
+  row-gap: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  color: $base-white;
+
+  @media ($tablet-breakpoint) {
+    max-width: 330px;
+  }
+
+  @media ($tablet-breakpoint) {
+    max-width: 380px;
+  }
 }
 
 .tours-card:not(:first-child) {
   display: none;
+}
+
+
+.tours-card__destination-wrapper {
+  order: -1;
+
+  display: flex;
+  align-items: center;
+
+  column-gap: 5px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.tours-card__destination-location {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: end;
+  column-gap: 9px;
+  padding: 8px 12px 8px 16px;
+
+  min-width: 90px;
+  min-height: 28px;
+  text-align: right;
+
+  background-color: $base-secondary;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 12px;
+
+    background-color: transparent;
+    background-size: 100%;
+    background-image: url("/__spritemap#sprite-pin-view");
+  }
+
+  @media ($tablet-breakpoint) {
+    margin-right: auto;
+  }
+}
+
+.tours-card__destination-duration {
+  display: flex;
+  align-items: center;
+
+  column-gap: 12px;
+
+  background-color: transparent;
+  background-size: 100%;
+
+  min-width: 74px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--sun::before {
+    background-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &--moon::before {
+    background-image: url("/__spritemap#sprite-moon-view");
+  }
+}
+
+.tours-card__title {
+  order: 0;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+
+  @media ($tablet-breakpoint) {
+    // BR?
+  }
+}
+
+.tours-card::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+
+  background-color: $base-white;
+
+  opacity: 0.2;
+  order: 1;
+}
+
+.tours-card__details {
+  order: 2;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(2, 1fr);
+
+  min-height: 32px;
+
+  column-gap: 8px;
+
+  @media ($tablet-breakpoint) {
+    justify-content: space-between;
+  }
+}
+
+.tours-card__details-title {
+  grid-row: 1/2;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.tours-card__details-description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 1px;
+
+
+  align-self: end;
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.tours-card--elbrus {
+  background-image: url("/img/tours/tours-card1-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    background-image: url("/img/tours/tours-card1-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    background-image: url("/img/tours/tours-card1-desktop@1x.webp");
+  }
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/tours/tours-card1-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/tours/tours-card1-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/tours/tours-card1-desktop@2x.webp");
+    }
+  }
 }

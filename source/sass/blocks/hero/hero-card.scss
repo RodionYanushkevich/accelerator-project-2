@@ -14,6 +14,7 @@
   align-items: center;
 
   background-image: url("/img/hero/hero-card1-mobile@1x.webp");
+
   // background-image: url("../../../img/hero/hero-card1-mobile@1x.webp");
   min-height: 568px;
   background-repeat: no-repeat;
@@ -87,6 +88,7 @@
   @media ($tablet-breakpoint) {
     font-size: 17px;
     line-height: 141%;
+    max-width: 500px;
   }
 
   @media ($desktop-breakpoint) {
