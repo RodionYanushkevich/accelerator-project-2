@@ -5,6 +5,7 @@
   flex-direction: column;
   row-gap: 25px;
   width: 100%;
+  max-width: $desktop;
 
   @media ($tablet-breakpoint) {
     padding: 40px 45px;
@@ -13,6 +14,7 @@
   @media ($desktop-breakpoint) {
     padding: 103px 120px;
     row-gap: 50px;
+    max-width: $desktop;
 
     // padding: 100px 120px;
   }

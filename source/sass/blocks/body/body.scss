@@ -1,3 +1,30 @@
-// .body {
-//   min-width: $mobile;
-// }
+.body {
+  min-width: $mobile;
+  background-size: 346px;
+  background-position: left calc(50% + 192px) top 678px;
+  background-repeat: no-repeat;
+
+  background-image: url("../img/background/background-mountains-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    background-size: 602px;
+    background-position: right -177px top 1124px;
+    background-image: url("../img/background/background-mountain-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    background-image: url("../img/background/background-mountains-desktop@1x.webp");
+  }
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/background/background-mountains-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/background/background-mountain-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/background/background-mountains-desktop@2x.webp");
+    }
+  }
+}
