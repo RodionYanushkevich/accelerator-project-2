@@ -2,17 +2,17 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 422px 15px 20px;
+  padding: 419px 15px 20px;
 
   row-gap: 25px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: left top 24px;
+  background-position: left top 20px;
   background-size: 434px;
   background-image: url("../img/background/about/background-about-mobile@1x.webp");
 
   @media ($tablet-breakpoint) {
-    padding: 40px 48px 20px;
+    padding: 38px 48px 20px;
     display: grid;
     grid-template-columns: calc(50% + 66px) auto;
 
@@ -22,13 +22,11 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 121px 120px 178px;
+    padding: 117px 120px 178px;
     grid-template-columns: calc(50% - 59px) 568px;
+    row-gap: 23px;
 
-    // grid-template-columns: calc(50% - 59px) 640px;
-    row-gap: 25px;
-
-    background-position: left top 52%;
+    background-position: left top 50%;
     background-size: 660px;
     background-image: url("../img/background/about/background-about-desktop@1x.webp");
   }
@@ -73,10 +71,12 @@
     font-size: 25px;
     padding-top: 3px;
     min-height: 67px;
+    align-self: end;
+    flex-direction: row;
+    align-items: center;
   }
 
   @media ($desktop-breakpoint) {
-    justify-content: center;
     padding-top: 0;
     font-size: 35px;
     min-height: 96px;

@@ -44,9 +44,11 @@
   @media ($desktop-breakpoint) {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 100%;
+    grid-template-columns: repeat(3, 1fr) 36.67%;
 
-    row-gap: unset;
+    overflow: hidden;
+
+    row-gap: 30px;
     column-gap: 3px;
     font-size: 16px;
   }
@@ -69,11 +71,12 @@
   }
 
   @media ($desktop-breakpoint) {
-    top: unset;
-    bottom: 6px;
-    display: flex;
-    height: 2px;
-    width: calc(100% - 6px);
+    // top: unset;
+    // bottom: 6px;
+    display: none;
+
+    // height: 2px;
+    // width: calc(100% - 6px);
   }
 }
 
@@ -83,14 +86,18 @@
   display: flex;
   min-width: 25px;
   min-height: 25px;
+  max-width: 25px;
+  max-height: 25px;
 
   background-repeat: no-repeat;
 }
 
 .training-process__list-item {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 15px;
+  background-size: 100%;
 
   &--map p::before {
     background-image: url("/__spritemap#sprite-map-icon-view");
@@ -169,6 +176,23 @@
   }
 }
 
+.training-process__list-item::after {
+  @media ($desktop-breakpoint) {
+    position: absolute;
+    content: "";
+    bottom: 6px;
+    left: 35px;
+
+    // left: 10px;
+    display: block;
+
+    background-color: $base-secondary;
+    height: 2px;
+    width: 100%;
+
+    transform: scaleX(1.1);
+  }
+}
 
 .training-process__title {
   position: relative;
