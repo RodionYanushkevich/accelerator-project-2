@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
   padding: 18px 15px;
+
+  // padding: 21px 15px;
   row-gap: 17px;
 
   @media ($tablet-breakpoint) {
@@ -12,7 +15,7 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 98px 120px;
+    padding: 98px 120px 76px;
     row-gap: 28px;
   }
 }

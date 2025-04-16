@@ -1,11 +1,86 @@
 .advantages-card {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 82px 10px 20px;
+  padding: 81px 10px 19px;
   row-gap: 15px;
-
+  min-height: 239px;
   outline: 1px solid rgba(2, 102, 193, 0.1);
+
+
+  &--security::before {
+    background-image: url("/__spritemap#sprite-security-icon-view");
+  }
+
+  &--crown::before {
+    background-image: url("/__spritemap#sprite-crown-icon-view");
+  }
+
+  &--boots-blue::before {
+    background-image: url("/__spritemap#sprite-boots-blue-icon-view");
+  }
+
+  &--path::before {
+    background-image: url("/__spritemap#sprite-path-icon-view");
+  }
+
+  &--leaf::before {
+    background-image: url("/__spritemap#sprite-leaf-icon-view");
+  }
+
+  @media ($tablet-breakpoint) {
+    padding: 103px 20px 30px;
+    min-width: 324px;
+    max-width: 324px;
+    min-height: 340px;
+    row-gap: 15px;
+  }
+
+  @media ($desktop-breakpoint) {
+    min-width: 380px;
+    max-width: 380px;
+    padding: 124px 20px 40px;
+    row-gap: 17px;
+    min-height: 380px;
+  }
+}
+
+.advantages-card::before {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 19px;
+  content: "";
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+
+  outline: 1px solid $base-secondary;
+
+  transform: translateX(-50%);
+
+  @media ($tablet-breakpoint) {
+    top: 30px;
+    width: 46px;
+    height: 46px;
+  }
+
+  @media ($desktop-breakpoint) {
+    top: 40px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.advantages-card br {
+  @media ($desktop-breakpoint) {
+    display: none;
+  }
 }
 
 .advantages-card h3 {
@@ -15,6 +90,14 @@
   font-size: 14px;
   line-height: 100%;
   text-align: center;
+
+  @media ($tablet-breakpoint) {
+    font-size: 16px;
+  }
+
+  @media ($desktop-breakpoint) {
+    font-size: 18px;
+  }
 }
 
 .advantages-card p {
@@ -24,4 +107,9 @@
   font-size: 12px;
   line-height: 150%;
   text-align: center;
+
+  @media ($tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 157%;
+  }
 }
