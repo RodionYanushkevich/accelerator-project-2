@@ -6,12 +6,33 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 290;
+  width: 290px;
   padding: 20px;
 
   row-gap: 15px;
-  border: 1px solid $base-white;
+  outline: 1px solid $base-white;
   box-shadow: 0 0 20px rgba(28, 51, 116, 0.1);
+
+  @media ($tablet-breakpoint) {
+    align-self: start;
+    width: unset;
+    display: grid;
+    grid-template-columns: 186px 1fr;
+    grid-template-rows: repeat(2, min-content);
+
+    max-width: 565px;
+
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+
+  @media ($desktop-breakpoint) {
+    max-width: 700px;
+    grid-template-columns: repeat(2, auto);
+
+    column-gap: 30px;
+    row-gap: 2px;
+  }
 }
 
 .reviews-card p {
@@ -36,11 +57,29 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 9px;
+
+  @media ($tablet-breakpoint) {
+    grid-column: 2/3;
+    grid-row: 1/-2;
+    margin-top: 4px;
+  }
+
+  @media ($desktop-breakpoint) {
+    grid-column: 2/3;
+    grid-row: 1/-2;
+    margin-top: 0;
+  }
 }
 
-// потом классы со слайдером добавишль
-.reviews-card img {
+.reviews-card picture {
+  @media ($tablet-breakpoint) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+}
+
+.reviews-card__image {
   background-color: #b4b2b3;
   color: $base-white;
 }
@@ -49,6 +88,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+
+  @media ($tablet-breakpoint) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 .reviews-card__title {
