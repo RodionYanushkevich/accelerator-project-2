@@ -588,12 +588,18 @@
 
       <form class="form-section__form form" method="post" action="https://echo.htmlacademy.ru">
 
-        <label class="form__label" for="phone-number">поле ввода номера телефона</label>
-        <input class="form__input" type="text" id="phone-number" name="phone-number" required autocomplete="off" placeholder="Телефон" pattern="[0-9\-\s]+">
+        <div class="form__wrapper">
+          <input class="form__input" type="text" id="phone-number" name="phone-number" required autocomplete="off" placeholder="+7 (000)-000-00-00" pattern="[0-9\-\s]+">
+          <label class="form__label" for="phone-number">Телефон</label>
+        </div>
 
-        <label class="form__label" for="email">поле ввода email</label>
-        <input class="form__input" type="email" id="email" name="email" required autocomplete="off" placeholder="Email">
-
+        <div class="form__wrapper">
+          <input class="form__input" type="email" id="email" name="email" required autocomplete="off" placeholder="ваш.email@пример.рф">
+          <label class="form__label" for="email">Email</label>
+        </div>
+        <button class="form__button" type="button">
+          Отправить
+        </button>
       </form>
     </section>
   </main>

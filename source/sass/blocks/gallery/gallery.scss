@@ -20,6 +20,8 @@
   padding: 0;
   margin-top: 21px;
 
+  align-self: center;
+
   // margin-top: 21px;
 
   @media ($tablet-breakpoint) {
@@ -29,10 +31,6 @@
   @media ($desktop-breakpoint) {
     margin-top: 20px;
   }
-}
-
-.gallery__swiper {
-  align-self: center;
 }
 
 .gallery__list {
