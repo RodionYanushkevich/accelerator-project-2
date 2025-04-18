@@ -8,6 +8,15 @@
     flex-wrap: wrap;
     row-gap: 51px;
     padding: 40px 45px;
+
+    background-image: url("/img/background/cloud-tablet@1x.webp"), url("/img/background/cloud-tablet@1x.webp");
+    background-position: top 266px left -446px, bottom 237px right -234px;
+    background-repeat: no-repeat;
+    background-size: 1200px 400px, 788px 263px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("/img/background/cloud-tablet@2x.webp"), url("/img/background/cloud-tablet@2x.webp");
+    }
   }
 
   @media ($desktop-breakpoint) {
@@ -16,6 +25,7 @@
     row-gap: 50px;
     justify-content: start;
     overflow: hidden;
+    background: none;
   }
 }
 

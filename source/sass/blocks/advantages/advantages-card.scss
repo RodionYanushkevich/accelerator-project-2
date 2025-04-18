@@ -3,13 +3,11 @@
   display: flex;
   flex-direction: column;
 
-  // min-height: 253px;
   padding: 20px 10px;
   row-gap: 15px;
 
   outline: 1px solid rgba(2, 102, 193, 0.1);
-
-  // outline-offset: -1px;
+  background-color: $base-white;
 
   &:last-child h3 {
     margin-left: -4px;
@@ -37,7 +35,7 @@
 
 
   @media ($tablet-breakpoint) {
-    padding: 103px 20px 30px;
+    padding: 30px 20px;
     min-width: 324px;
     max-width: 324px;
     min-height: 340px;
@@ -45,7 +43,7 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 124px 20px 40px;
+    padding: 40px 20px;
 
     min-width: unset;
     max-width: unset;
@@ -69,18 +67,14 @@
 
   border: 1px solid $base-secondary;
 
-  // transform: translateX(-50%);
-
   @media ($tablet-breakpoint) {
-    top: 30px;
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
   }
 
   @media ($desktop-breakpoint) {
-    top: 41px;
-    width: 52px;
-    height: 52px;
+    width: 54px;
+    height: 54px;
   }
 }
 
@@ -90,10 +84,6 @@
   @media ($tablet-breakpoint) {
     display: inline;
   }
-
-  // @media ($desktop-breakpoint) {
-  //   display: none;
-  // }
 }
 
 .advantages-card h3 br {
@@ -114,10 +104,13 @@
   text-align: center;
 
   @media ($tablet-breakpoint) {
+    margin-top: 10px;
+
     font-size: 16px;
   }
 
   @media ($desktop-breakpoint) {
+    margin-top: 15px;
     font-size: 18px;
   }
 }
@@ -140,7 +133,6 @@
   @media ($desktop-breakpoint) {
     width: 340px;
 
-    // height: 132px;
     font-size: 14px;
     text-align: center;
   }

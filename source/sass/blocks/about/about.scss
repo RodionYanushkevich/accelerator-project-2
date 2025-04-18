@@ -16,7 +16,8 @@
     display: grid;
     grid-template-columns: calc(50% + 66px) auto;
 
-    background-position: left top 45%;
+
+    background-position: left top 174px;
     background-size: 542px;
     background-image: url("../img/background/about/background-about-tablet@1x.webp");
   }
@@ -24,7 +25,6 @@
   @media ($desktop-breakpoint) {
     padding: 100px 120px 178px;
     grid-template-columns: calc(50% - 59px) 585px;
-    row-gap: 25px;
 
     background-position: left top 100px;
     background-size: 660px;
