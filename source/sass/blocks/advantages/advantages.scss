@@ -1,7 +1,7 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  row-gap: 23px;
+  row-gap: 22px;
   padding: 18px 15px 20px;
 
   @media ($tablet-breakpoint) {
@@ -13,7 +13,7 @@
   @media ($desktop-breakpoint) {
     padding: 100px 120px 185px;
 
-    row-gap: 51px;
+    row-gap: 50px;
     justify-content: start;
     overflow: hidden;
   }

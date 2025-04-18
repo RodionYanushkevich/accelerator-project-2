@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   max-width: $desktop;
-  padding: 18px 15px;
+  padding: 18px 15px 20px;
 
   row-gap: 25px;
 
@@ -15,7 +15,7 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 40px 120px 49px;
+    padding: 40px 120px 48px;
     align-items: unset;
     row-gap: 56px;
   }

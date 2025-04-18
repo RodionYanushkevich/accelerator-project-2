@@ -1,13 +1,19 @@
 .advantages-card {
-  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 81px 10px 19px;
+
+  // min-height: 253px;
+  padding: 20px 10px;
   row-gap: 15px;
-  min-height: 239px;
+
   outline: 1px solid rgba(2, 102, 193, 0.1);
 
+  // outline-offset: -1px;
+
+  &:last-child h3 {
+    margin-left: -4px;
+  }
 
   &--security::before {
     background-image: url("/__spritemap#sprite-security-icon-view");
@@ -29,6 +35,7 @@
     background-image: url("/__spritemap#sprite-leaf-icon-view");
   }
 
+
   @media ($tablet-breakpoint) {
     padding: 103px 20px 30px;
     min-width: 324px;
@@ -38,31 +45,31 @@
   }
 
   @media ($desktop-breakpoint) {
-    min-width: 380px;
-    max-width: 380px;
     padding: 124px 20px 40px;
-    row-gap: 17px;
-    min-height: 380px;
+
+    min-width: unset;
+    max-width: unset;
+    row-gap: 16px;
+
+    min-height: unset;
   }
 }
 
 .advantages-card::before {
   box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 19px;
   content: "";
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+  align-self: center;
 
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center;
 
-  outline: 1px solid $base-secondary;
+  border: 1px solid $base-secondary;
 
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
 
   @media ($tablet-breakpoint) {
     top: 30px;
@@ -71,13 +78,27 @@
   }
 
   @media ($desktop-breakpoint) {
-    top: 40px;
+    top: 41px;
     width: 52px;
     height: 52px;
   }
 }
 
 .advantages-card br {
+  display: none;
+
+  @media ($tablet-breakpoint) {
+    display: inline;
+  }
+
+  // @media ($desktop-breakpoint) {
+  //   display: none;
+  // }
+}
+
+.advantages-card h3 br {
+  display: inline;
+
   @media ($desktop-breakpoint) {
     display: none;
   }
@@ -85,7 +106,8 @@
 
 .advantages-card h3 {
   margin: 0;
-
+  margin-top: 5px;
+  padding: 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
@@ -109,7 +131,17 @@
   text-align: center;
 
   @media ($tablet-breakpoint) {
+    width: 284px;
+
     font-size: 14px;
     line-height: 157%;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 340px;
+
+    // height: 132px;
+    font-size: 14px;
+    text-align: center;
   }
 }
