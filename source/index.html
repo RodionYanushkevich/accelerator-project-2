@@ -501,20 +501,76 @@
     </section>
 
     <section class="main__gallery gallery" data-test="gallery">
-      <h2 class="gallery__title title">Фотогалерея</h2>
-      <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+      <h2 class="gallery__title title" data-content="Фотогалерея">Фотогалерея</h2>
+      <p>Добавляйте фото с хэштегом #лайфтур, <br>а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
 
       <div class="gallery__swiper swiper-container">
         <ul class="gallery__list swiper-wrapper">
-          <!-- пока пропустим -->
           <!-- слайд 1 -->
           <li class="gallery__list-item gallery-card swiper-slide">
             <picture>
-              <!-- <source type="image/webp" media="(min-width:1440px)" srcset="img/gallery/gallery-desktop@1x.webp 1x, img/gallery/gallery-desktop@2x.webp 2x" width="660" height="500">
-              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/gallery-tablet@1x.webp 1x, img/gallery/gallery-tablet@2x.webp 2x" width="378" height="348"> -->
-              <!-- <img src="img/gallery/gallery-mobile@1x.webp" srcset="img/gallery/games-mobile@2x.webp" width="157" height="266" alt="ФОТО ФОТО ФОТО ФОТО"> -->
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-1/desktop/gallery-desktop-card-1@1x.webp 1x, img/gallery/slide-1/desktop/gallery-desktop-card-1@2x.webp 2x" width="284" height="463">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-1/tablet/gallery-tablet-card-1@1x.webp 1x, img/gallery/slide-1/tablet/gallery-tablet-card-1@2x.webp 2x" width="253" height="418">
+
+              <img class="gallery-card__image" src="img/gallery/slide-1/mobile/gallery-mobile-card-1@1x.webp" srcset="img/gallery/slide-1/mobile/gallery-mobile-card-1@2x.webp" width="158" height="266" alt="фотография мужчины стоящего спиной на фоне гор">
             </picture>
           </li>
+          <!-- слайд 2 -->
+          <li class="gallery__list-item gallery-card swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-2/desktop/gallery-desktop-card-2@1x.webp 1x, img/gallery/slide-2/desktop/gallery-desktop-card-2@2x.webp 2x" width="284" height="233">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-2/tablet/gallery-tablet-card-2@1x.webp 1x, img/gallery/slide-2/tablet/gallery-tablet-card-2@2x.webp 2x" width="252" height="210">
+
+              <img class="gallery-card__image" src="img/gallery/slide-2/mobile/gallery-mobile-card-2@1x.webp" srcset="img/gallery/slide-2/mobile/gallery-mobile-card-2@2x.webp" width="157" height="135" alt="Люди у костра">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-2/desktop/gallery-desktop-card-3@1x.webp 1x, img/gallery/slide-2/desktop/gallery-desktop-card-3@2x.webp 2x" width="284" height="223">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-2/tablet/gallery-tablet-card-3@1x.webp 1x, img/gallery/slide-2/tablet/gallery-tablet-card-3@2x.webp 2x" width="252" height="202">
+
+              <img class="gallery-card__image" src="img/gallery/slide-2/mobile/gallery-mobile-card-3@1x.webp" srcset="img/gallery/slide-2/mobile/gallery-mobile-card-3@2x.webp" width="157" height="125" alt="Компас в руке ">
+            </picture>
+          </li>
+          <!-- слайд 3 -->
+          <li class="gallery__list-item gallery-card swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-3/desktop/gallery-desktop-card-4@1x.webp 1x, img/gallery/slide-3/desktop/gallery-desktop-card-4@2x.webp 2x" width="284" height="463">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-3/tablet/gallery-tablet-card-4@1x.webp 1x, img/gallery/slide-3/tablet/gallery-tablet-card-4@2x.webp 2x" width="253" height="418">
+
+              <img class="gallery-card__image" src="img/gallery/slide-3/mobile/gallery-mobile-card-4@1x.webp" srcset="img/gallery/slide-3/mobile/gallery-mobile-card-4@2x.webp" width="158" height="266" alt="горная тропа">
+            </picture>
+          </li>
+          <!-- слайд 4 -->
+          <li class="gallery__list-item gallery-card swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-4/desktop/gallery-desktop-card-5@1x.webp 1x, img/gallery/slide-4/desktop/gallery-desktop-card-5@2x.webp 2x" width="284" height="233">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-2/tablet/gallery-tablet-card-2@1x.webp 1x, img/gallery/slide-4/tablet/gallery-tablet-card-5@2x.webp 2x" width="252" height="210">
+
+              <img class="gallery-card__image" src="img/gallery/slide-2/mobile/gallery-mobile-card-2@1x.webp" srcset="img/gallery/slide-2/mobile/gallery-mobile-card-2@2x.webp" width="157" height="135" alt="люди у костра">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-4/desktop/gallery-desktop-card-6@1x.webp 1x, img/gallery/slide-4/desktop/gallery-desktop-card-6@2x.webp 2x" width="284" height="223">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-4/tablet/gallery-tablet-card-6@1x.webp 1x, img/gallery/slide-4/tablet/gallery-tablet-card-6@2x.webp 2x" width="252" height="202">
+
+              <img class="gallery-card__image" src="img/gallery/slide-4/mobile/gallery-mobile-card-6@1x.webp" srcset="img/gallery/slide-4/mobile/gallery-mobile-card-6@2x.webp" width="157" height="125" alt="Палатка ">
+            </picture>
+          </li>
+          <!-- слайд 5 -->
+          <li class="gallery__list-item gallery-card swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/gallery/slide-5/desktop/gallery-desktop-card-7@1x.webp 1x, img/gallery/slide-5/desktop/gallery-desktop-card-7@2x.webp 2x" width="284" height="463">
+
+              <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/slide-5/tablet/gallery-tablet-card-7@1x.webp 1x, img/gallery/slide-5/tablet/gallery-tablet-card-1@2x.webp 2x" width="253" height="418">
+
+              <img class="gallery-card__image" src="img/gallery/slide-5/mobile/gallery-mobile-card-7@1x.webp" srcset="img/gallery/slide-5/mobile/gallery-mobile-card-7@2x.webp" width="158" height="266" alt="у костра фотография 2х мужчин">
+            </picture>
+          </li>
+
         </ul>
 
         <button class="swiper-button-prev" type="button">
