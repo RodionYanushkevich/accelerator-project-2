@@ -1,12 +1,43 @@
 .form-section {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 638px;
-
   padding: 0 31px;
-
   row-gap: 20px;
+  color: $base-white;
+  width: 100%;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/form/form-background-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    min-height: 680px;
+
+    background-image: url("/img/form/form-background-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    min-height: 760px;
+
+    background-image: url("/img/form/form-background-desktop@1x.webp");
+  }
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/form/form-background-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/form/form-background-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/form/form-background-desktop@2x.webp");
+    }
+  }
 }
 
 .form-section h2 {
