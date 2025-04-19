@@ -584,12 +584,12 @@
     </section>
     <section class="main__form-section form-section" data-test="form">
       <h2>Остались вопросы?</h2>
-      <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+      <p>Заполните форму и наш оператор свяжется <br>с вами для консультации.</p>
 
       <form class="form-section__form form" method="post" action="https://echo.htmlacademy.ru">
 
         <div class="form__wrapper">
-          <input class="form__input" type="text" id="phone-number" name="phone-number" required autocomplete="off" placeholder="+7 (000)-000-00-00" pattern="[0-9\-\s]+">
+          <input class="form__input" type="number" id="phone-number" name="phone-number" required autocomplete="off" placeholder="+7 (000)-000-00-00" pattern="[0-9\-\s]+">
           <label class="form__label" for="phone-number">Телефон</label>
         </div>
 
@@ -597,7 +597,7 @@
           <input class="form__input" type="email" id="email" name="email" required autocomplete="off" placeholder="ваш.email@пример.рф">
           <label class="form__label" for="email">Email</label>
         </div>
-        <button class="form__button" type="button">
+        <button class="form__button" type="submit">
           Отправить
         </button>
       </form>
@@ -607,35 +607,36 @@
   <footer class="page__footer footer-section" data-test="footer">
 
     <div class="footer-section__contacts contacts">
-      <h2 class="contacts__title title">Контакты</h2>
+      <h2 class="contacts__title title" data-content="Контакты">Контакты</h2>
       <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
 
       <ul class="contacts__list">
-        <li class="contacts__list-item">
-          <h3 class="contacts__item-title">Телефон:</h3>
+
+        <li class="contacts__list-item contacts__list-item--phone">
+          <h3 class="contacts__item-title">Телефон</h3>
           <a class="contacts__item-description contacts__link" href="tel:+79837454545">+7 983 745-45-45</a>
         </li>
 
-        <li class="contacts__list-item">
-          <h3 class="contacts__item-title">Email:</h3>
-          <a class="contacts__item-description contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+        <li class="contacts__list-item contacts__list-item--email">
+          <h3 class="contacts__item-title">Email</h3>
+          <a class="contacts__item-description" href="mailto:info@lifetour.com">info@lifetour.com</a>
         </li>
 
-        <li class="contacts__list-item">
-          <h3 class="contacts__item-title">Адрес:</h3>
-          <address class="contacts__item-description">г. Москва, пр-т Мира, д. 14, офис 101</address>
+        <li class="contacts__list-item contacts__list-item--address">
+          <h3 class="contacts__item-title">Адрес</h3>
+          <address class="contacts__item-description">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
         </li>
       </ul>
 
       <picture>
-        <!-- <source type="image/webp" media="(min-width:1440px)" srcset="img/gallery/gallery-desktop@1x.webp 1x, img/gallery/gallery-desktop@2x.webp 2x" width="660" height="500">
-        <source type="image/webp" media="(min-width:768px)" srcset="img/gallery/gallery-tablet@1x.webp 1x, img/gallery/gallery-tablet@2x.webp 2x" width="378" height="348"> -->
-        <!-- <img src="img/contacts/contacts-mobile@1x.webp" srcset="img/contacts/contacts-mobile@2x.webp" width="320" height="343"> -->
+        <source type="image/webp" media="(min-width:1440px)" srcset="img/map/map-desktop@1x.webp 1x, img/map/map-desktop@2x.webp 2x" width="600" height="324">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/map/map-tablet@1x.webp 1x, img/map/map-tablet@2x.webp 2x" width="768" height="340">
+        <img class="contacts__map-image" src="img/map/map-mobile@1x.webp" srcset="img/map/map-mobile@2x.webp" width="320" height="343" alt="Мы на карте">
       </picture>
 
     </div>
-    <div class="footer-section__footer footer">
 
+    <div class="footer-section__footer footer">
       <img class="footer__logo-image" src="img/footer-logo.svg" alt="Логотип Lifetour" width="142" height="42">
 
       <ul class="footer__list footer-navigation">
@@ -658,10 +659,13 @@
           <a class="footer-navigation__link" href="#">Контакты</a>
         </li>
       </ul>
+
+      <a class="footer__tel-link" href="tel:88007253232">8 800 725-32-32</a>
+
       <ul class="footer__social social">
-        <li class="social__item"><a class="social__link" href=""><span class="visually-hidden">VK</span></a></li>
-        <li class="social__item"><a class="social__link" href=""><span class="visually-hidden">OK</span></a></li>
-        <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">REDDIT</span></a></li>
+        <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">VK</span></a></li>
+        <li class="social__item"><a class="social__link social__link--ok" href="#"><span class="visually-hidden">OK</span></a></li>
+        <li class="social__item"><a class="social__link social__link--reddit" href="#"><span class="visually-hidden">REDDIT</span></a></li>
       </ul>
 
       <a href="" class="footer__copyright-link">Политика конфиденциальности</a>
