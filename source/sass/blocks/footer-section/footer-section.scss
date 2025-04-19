@@ -1,6 +1,18 @@
 .footer-section {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   width: 100%;
+
+  // max-width: $desktop;
+
+  @media ($tablet-breakpoint) {
+    row-gap: 30px;
+  }
+
+  @media ($desktop-breakpoint) {
+    // padding: 100px 120px 32px;
+    row-gap: 30px;
+  }
 }

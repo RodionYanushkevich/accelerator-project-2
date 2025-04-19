@@ -6,10 +6,33 @@
   padding: 15px;
 
   width: 290px;
+  outline: 1px solid rgba(2, 102, 193, 0.1);
+
+  @media ($tablet-breakpoint) {
+    width: 212.67px;
+    padding: 15px 15px 47px;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 285px;
+    padding: 15px 15px 31px;
+  }
 }
 
-.training-card:not(:first-child) {
-  display: none;
+.training-card {
+  &:not(:nth-child(3)) {
+    display: none;
+
+    @media ($tablet-breakpoint) {
+      display: flex;
+    }
+  }
+
+  @media ($tablet-breakpoint) {
+    &:not(:nth-child(1)) {
+      display: none;
+    }
+  }
 }
 
 
@@ -20,7 +43,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 15px;
-  flex-grow: 1;
 }
 
 .training-card__image {
@@ -32,28 +54,58 @@
   margin: 0;
   padding: 0;
 
+
+  align-self: start;
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
 }
 
 .training-card__figure figcaption {
+  position: relative;
+  bottom: -0.2em;
+
   width: min-content;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
 }
 
 .training-card__figure-link {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+
   height: 24px;
   width: 24px;
 
   border: 1px solid $base-primary;
+  background-size: 14px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/__spritemap#sprite-vk-view");
 }
 
 .training-card p {
   margin: 0;
   padding: 0;
-
+  width: 240px;
   font-size: 12px;
   line-height: 133%;
+
+  @media ($tablet-breakpoint) {
+    width: unset;
+  }
+}
+
+.training-card br {
+  display: none;
+
+  @media ($tablet-breakpoint) {
+    display: inline-block;
+  }
+
+  @media ($desktop-breakpoint) {
+    display: none;
+  }
 }

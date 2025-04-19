@@ -1,24 +1,123 @@
 .gallery {
   display: flex;
   flex-direction: column;
-  padding: 20px 15px 0;
+  padding: 20px 0 3px;
   row-gap: 10px;
+  max-width: $desktop;
+
+  @media ($tablet-breakpoint) {
+    padding: 40px 0 3px;
+    row-gap: 20px;
+  }
+
+  @media ($desktop-breakpoint) {
+    padding: 100px 0 3px;
+    row-gap: 26px;
+  }
 }
 
 .gallery__swiper {
+  padding: 0;
   margin-top: 21px;
+
+  align-self: center;
+
+  // margin-top: 21px;
+
+  @media ($tablet-breakpoint) {
+    margin-top: 1px;
+  }
+
+  @media ($desktop-breakpoint) {
+    margin-top: 20px;
+  }
 }
 
 .gallery__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  width: 100%;
+  display: flex;
+
+  // swiper
+  gap: 5px;
+}
+
+// !!!!! чужой блок
+.gallery-card:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery-card {
+  &:nth-child(n+3) {
+    display: none;
+  }
+
+  @media ($tablet-breakpoint) {
+    &:nth-child(n+3) {
+      display: flex;
+    }
+
+    &:nth-child(n+4) {
+      display: none;
+    }
+  }
+
+  @media ($desktop-breakpoint) {
+    display: flex;
+
+    &:nth-child(n+4) {
+      display: flex;
+    }
+  }
+}
+
+// !!!!!
+
+.gallery br {
+  display: inline;
+
+  @media ($desktop-breakpoint) {
+    display: none;
+  }
 }
 
 .gallery p {
-  padding: 0;
+  padding: 0 15px;
   margin: 0;
 
   font-size: 12px;
   line-height: 150%;
+
+  @media ($tablet-breakpoint) {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 157%;
+    padding: 0 0 0 45px;
+
+    max-width: 427px;
+  }
+
+  @media ($desktop-breakpoint) {
+    box-sizing: unset;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 595px;
+    padding: 0 120px;
+  }
+}
+
+.gallery__title {
+  padding: 0 15px;
+
+  @media ($tablet-breakpoint) {
+    padding: 10px 0 0 45px;
+  }
+
+  @media ($desktop-breakpoint) {
+    padding: 0 120px;
+  }
 }

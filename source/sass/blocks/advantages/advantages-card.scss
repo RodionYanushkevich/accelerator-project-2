@@ -1,23 +1,118 @@
 .advantages-card {
-  // box-sizing: border-box;
-
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 82px 10px 20px;
+
+  padding: 20px 10px;
   row-gap: 15px;
 
   outline: 1px solid rgba(2, 102, 193, 0.1);
+  background-color: $base-white;
+
+  &:last-child h3 {
+    margin-left: -4px;
+  }
+
+  &--security::before {
+    background-image: url("/__spritemap#sprite-security-icon-view");
+  }
+
+  &--crown::before {
+    background-image: url("/__spritemap#sprite-crown-icon-view");
+  }
+
+  &--boots-blue::before {
+    background-image: url("/__spritemap#sprite-boots-blue-icon-view");
+  }
+
+  &--path::before {
+    background-image: url("/__spritemap#sprite-path-icon-view");
+  }
+
+  &--leaf::before {
+    background-image: url("/__spritemap#sprite-leaf-icon-view");
+  }
+
+
+  @media ($tablet-breakpoint) {
+    padding: 30px 20px;
+    min-width: 324px;
+    max-width: 324px;
+    min-height: 340px;
+    row-gap: 15px;
+  }
+
+  @media ($desktop-breakpoint) {
+    padding: 40px 20px;
+
+    min-width: unset;
+    max-width: unset;
+    row-gap: 16px;
+
+    min-height: unset;
+  }
+}
+
+.advantages-card::before {
+  box-sizing: border-box;
+  content: "";
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-self: center;
+
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+
+  border: 1px solid $base-secondary;
+
+  @media ($tablet-breakpoint) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.advantages-card br {
+  display: none;
+
+  @media ($tablet-breakpoint) {
+    display: inline;
+  }
+}
+
+.advantages-card h3 br {
+  display: inline;
+
+  @media ($desktop-breakpoint) {
+    display: none;
+  }
 }
 
 .advantages-card h3 {
   margin: 0;
-
-  // padding: 0 10px;
-
+  margin-top: 5px;
+  padding: 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
   text-align: center;
+
+  @media ($tablet-breakpoint) {
+    margin-top: 10px;
+
+    font-size: 16px;
+  }
+
+  @media ($desktop-breakpoint) {
+    margin-top: 15px;
+    font-size: 18px;
+  }
 }
 
 .advantages-card p {
@@ -27,4 +122,18 @@
   font-size: 12px;
   line-height: 150%;
   text-align: center;
+
+  @media ($tablet-breakpoint) {
+    width: 284px;
+
+    font-size: 14px;
+    line-height: 157%;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 340px;
+
+    font-size: 14px;
+    text-align: center;
+  }
 }

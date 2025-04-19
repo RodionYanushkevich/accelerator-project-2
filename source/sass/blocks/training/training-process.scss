@@ -1,0 +1,242 @@
+
+.training-process {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 25px;
+
+  @media ($tablet-breakpoint) {
+    row-gap: 104px;
+  }
+
+  @media ($desktop-breakpoint) {
+    row-gap: 31px;
+  }
+}
+
+.training-process__list {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  list-style: none;
+
+  @media ($tablet-breakpoint) {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+    row-gap: 106px;
+
+    font-size: 14px;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 36.67%;
+
+    overflow: hidden;
+
+    row-gap: 30px;
+    column-gap: 3px;
+    font-size: 16px;
+  }
+}
+
+
+.training-process__list::after {
+  position: absolute;
+  left: 6px;
+  top: 11px;
+  content: "";
+  display: block;
+  width: 2px;
+  height: calc(100% - 36px);
+
+  background-color: $base-secondary;
+
+  @media ($tablet-breakpoint) {
+    display: none;
+  }
+
+  @media ($desktop-breakpoint) {
+    // top: unset;
+    // bottom: 6px;
+    display: none;
+
+    // height: 2px;
+    // width: calc(100% - 6px);
+  }
+}
+
+
+.training-process__list-item p::before {
+  content: "";
+  display: flex;
+  min-width: 25px;
+  min-height: 25px;
+  max-width: 25px;
+  max-height: 25px;
+
+  background-repeat: no-repeat;
+}
+
+.training-process__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  background-size: 100%;
+
+  &--map p::before {
+    background-image: url("/__spritemap#sprite-map-icon-view");
+  }
+
+  &--boots p::before {
+    background-image: url("/__spritemap#sprite-boots-icon-view");
+  }
+
+  &--forest p::before {
+    background-image: url("/__spritemap#sprite-forest-icon-view");
+  }
+
+  &--mountain p::before {
+    background-image: url("/__spritemap#sprite-mountain-icon-view");
+  }
+
+  @media ($tablet-breakpoint) {
+    &--map {
+      order: -1;
+    }
+
+    &--mountain {
+      order: 0;
+    }
+
+    &--boots {
+      order: 1;
+    }
+
+    &--forest {
+      order: 2;
+    }
+  }
+
+  @media ($desktop-breakpoint) {
+    display: grid;
+    grid-template-columns: 28px  auto;
+    grid-template-rows: minmax(72px, min-content) 14px;
+    column-gap: 0;
+
+    order: unset;
+
+    &:nth-child(3)::before {
+      justify-self: start;
+      transform: translateX(0);
+    }
+  }
+}
+
+
+.training-process__list-item::before {
+  content: "";
+  display: flex;
+  border-radius: 50%;
+  min-width: 14px;
+  min-height: 14px;
+  max-width: 14px;
+  max-height: 14px;
+
+  color: $base-secondary;
+
+  background-color: $base-secondary;
+
+  @media ($tablet-breakpoint) {
+    display: none;
+  }
+
+  @media ($desktop-breakpoint) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    transform: translateX(50%);
+
+    justify-self: end;
+  }
+}
+
+.training-process__list-item::after {
+  @media ($desktop-breakpoint) {
+    position: absolute;
+    content: "";
+    bottom: 6px;
+    left: 35px;
+
+    // left: 10px;
+    display: block;
+
+    background-color: $base-secondary;
+    height: 2px;
+    width: 100%;
+
+    transform: scaleX(1.1);
+  }
+}
+
+.training-process__title {
+  position: relative;
+
+  bottom: -0.1em;
+
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+
+  @media ($tablet-breakpoint) {
+    font-size: 18px;
+  }
+
+  @media ($desktop-breakpoint) {
+    font-size: 21px;
+  }
+}
+
+.training-process__list-item p {
+  box-sizing: border-box;
+  display: flex;
+  column-gap: 9px;
+  width: 235px;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+
+  @media ($tablet-breakpoint) {
+    width: 272px;
+    padding-right: 10px;
+  }
+
+  @media ($desktop-breakpoint) {
+    grid-column: 1/-1;
+
+    width: 250px;
+
+    // width: unset;
+    padding-left: 11px;
+    padding-right: 10px;
+  }
+}

@@ -1,22 +1,96 @@
 .form-section {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   min-height: 638px;
-
-  padding: 0 31px;
-
   row-gap: 20px;
+  width: 100%;
+  padding: 31px;
 
-  // color: $base-white;
+  color: $base-white;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-image: url("/img/form/form-background-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    padding: 31px 204px;
+    min-height: 680px;
+    row-gap: 25px;
+
+    background-image: url("/img/form/form-background-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    padding: 31px 240px;
+    min-height: 760px;
+    row-gap: 20px;
+    background-image: url("/img/form/form-background-desktop@1x.webp");
+  }
+
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/form/form-background-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/form/form-background-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/form/form-background-desktop@2x.webp");
+    }
+  }
 }
 
 .form-section h2 {
+  position: relative;
+  bottom: -0.1em;
   margin: 0;
   padding: 0;
+
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 100%;
+
+  @media ($tablet-breakpoint) {
+    font-size: 25px;
+  }
+
+  @media ($desktop-breakpoint) {
+    font-size: 35px;
+  }
 }
 
 .form-section p {
   margin: 0;
   padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+
+  @media ($tablet-breakpoint) {
+    font-size: 16px;
+  }
+
+  @media ($desktop-breakpoint) {
+    // font-size: 35px;
+  }
+}
+
+
+.form-section br {
+  @media (width >= 325px) {
+    display: none;
+  }
+}
+
+.form-section__form {
+  @media ($desktop-breakpoint) {
+    margin-top: 20px;
+  }
 }

@@ -2,47 +2,139 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 420px 15px 20px;
-
-  // align-items: center;
+  padding: 419px 15px 21px;
 
   row-gap: 25px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left top 20px;
+  background-size: 434px;
+  background-image: url("../img/background/about/background-about-mobile@1x.webp");
 
   @media ($tablet-breakpoint) {
-    padding: 40px 48px 20px;
+    padding: 38px 48px 40px;
+    display: grid;
+    grid-template-columns: calc(50% + 66px) auto;
+
+
+    background-position: left top 174px;
+    background-size: 542px;
+    background-image: url("../img/background/about/background-about-tablet@1x.webp");
   }
 
   @media ($desktop-breakpoint) {
     padding: 100px 120px 178px;
+    grid-template-columns: calc(50% - 59px) 585px;
+
+    background-position: left top 100px;
+    background-size: 660px;
+    background-image: url("../img/background/about/background-about-desktop@1x.webp");
+  }
+
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/background/about/background-about-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/background/about/background-about-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/background/about/background-about-desktop@2x.webp");
+    }
+  }
+}
+
+.about > * {
+  @media ($tablet-breakpoint) {
+    grid-column: 2/3;
   }
 }
 
 .about h2 {
-  margin: 0;
-  padding: 0;
+  position: relative;
 
-  min-height: 55px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0;
+
+  padding-top: 19px;
 
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
 
+  min-height: 55px;
+
   @media ($tablet-breakpoint) {
     font-size: 25px;
+    padding-top: 3px;
+    min-height: 67px;
+    align-self: end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media ($desktop-breakpoint) {
+    padding-top: 0;
+    margin-bottom: 30px;
+    font-size: 35px;
+    min-height: 80px;
+    align-items: end;
+
+    align-self: stretch;
+  }
+}
+
+.about h2::before {
+  content: "О нас";
+  position: absolute;
+  top: 5px;
+  display: block;
+
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 100%;
+  opacity: 0.03;
+
+
+  @media ($tablet-breakpoint) {
+    font-size: 40px;
   }
 
   @media ($desktop-breakpoint) {
     font-size: 55px;
+
+    // top: unset;
+    // bottom: 0;
   }
 }
+
 
 .about__wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+
+  @media ($desktop-breakpoint) {
+    row-gap: 20px;
+  }
+}
+
+.about__wrapper br {
+  display: none;
+
+  @media ($desktop-breakpoint) {
+    display: inline;
+  }
 }
 
 .about__wrapper h3 {
+  display: flex;
+  position: relative;
+  bottom: -0.2em;
   margin: 0;
   padding: 0;
 

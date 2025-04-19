@@ -1,16 +1,52 @@
 .title {
+  position: relative;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
+  min-height: 55px;
 
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
 
   @media ($tablet-breakpoint) {
+    padding-top: 10px;
+
     font-size: 25px;
+  }
+
+  @media ($desktop-breakpoint) {
+    align-items: end;
+    padding-top: 0;
+
+    font-size: 35px;
+  }
+}
+
+.title::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  display: block;
+
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 100%;
+
+  opacity: 0.03;
+
+
+  @media ($tablet-breakpoint) {
+    top: 5px;
+
+    font-size: 40px;
   }
 
   @media ($desktop-breakpoint) {
     font-size: 55px;
   }
 }
+

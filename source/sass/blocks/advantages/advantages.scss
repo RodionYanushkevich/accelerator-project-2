@@ -1,9 +1,32 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  row-gap: 37px;
-  padding: 20px 15px;
+  row-gap: 22px;
+  padding: 18px 15px 20px;
+
+  @media ($tablet-breakpoint) {
+    flex-wrap: wrap;
+    row-gap: 51px;
+    padding: 40px 45px 38px;
+
+    background-image: url("/img/background/cloud-tablet@1x.webp"), url("/img/background/cloud-tablet@1x.webp");
+    background-position: top 266px left -446px, bottom 237px right -234px;
+    background-repeat: no-repeat;
+    background-size: 1200px 400px, 788px 263px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("/img/background/cloud-tablet@2x.webp"), url("/img/background/cloud-tablet@2x.webp");
+    }
+  }
+
+  @media ($desktop-breakpoint) {
+    padding: 100px 120px 185px;
+
+    row-gap: 50px;
+    justify-content: start;
+    overflow: hidden;
+    background: none;
+  }
 }
 
 .advantages__list {
@@ -11,6 +34,34 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   row-gap: 15px;
+
+  @media ($tablet-breakpoint) {
+    flex-direction: row;
+    justify-content: center;
+
+    // gap: 33px;
+    gap: 30px;
+  }
+
+  @media ($desktop-breakpoint) {
+    flex-wrap: nowrap;
+    max-width: 1200px;
+  }
+}
+
+.advantages__title {
+  align-self: center;
+
+  justify-content: center;
+
+  @media ($desktop-breakpoint) {
+    min-height: 70px;
+  }
+
+  &::before {
+    top: 5px;
+  }
 }
