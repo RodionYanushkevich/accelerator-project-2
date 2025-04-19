@@ -16,40 +16,32 @@
 </head>
 
 <body class="page__body body">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
   <header class="body__header header" data-test="header">
     <a class="header__logo-link" href="#">
       <img class="header__logo-image logo-image" src="img/logo.svg" alt="Логотип Lifetour" width="142" height="42">
     </a>
-
     <button class="header__button" type="button">
       <span class="visually-hidden">
         кнопка выпадающего меню навигации</span></button>
-
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Туры</a>
+          <a class="navigation__link" href="#tours">Туры</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Обучение</a>
+          <a class="navigation__link" href="#training">Обучение</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">О нас</a>
+          <a class="navigation__link" href="#about">О нас</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Отзывы</a>
+          <a class="navigation__link" href="#reviews">Отзывы</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Фотографии</a>
+          <a class="navigation__link" href="#gallery">Фотографии</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Контакты</a>
+          <a class="navigation__link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -104,7 +96,7 @@
       </div>
     </section>
 
-    <section class="main__tours tours" data-test="tours">
+    <section class="main__tours tours" data-test="tours" id="tours">
       <h2 class="tours__title title" data-content="Ближайшие туры">Ближайшие туры</h2>
 
       <div class="tours__swiper swiper-container">
@@ -241,7 +233,7 @@
 
     </section>
 
-    <section class="main__training training" data-test="training">
+    <section class="main__training training" data-test="training" id="training">
       <div class="training__title-container">
         <h2 class="training__title title" data-content="Обучение">Обучение</h2>
 
@@ -348,7 +340,7 @@
 
     </section>
 
-    <section class="main__about about" data-test="about">
+    <section class="main__about about" data-test="about" id="about">
       <h2>О нас</h2>
 
       <div class="about__wrapper">
@@ -361,7 +353,7 @@
       </div>
     </section>
 
-    <section class="main__reviews reviews" data-test="reviews">
+    <section class="main__reviews reviews" data-test="reviews" id="reviews">
       <h2 class="reviews__title title" data-content="Отзывы">Отзывы</h2>
 
       <div class="reviews__swiper swiper-container">
@@ -500,7 +492,7 @@
       </div>
     </section>
 
-    <section class="main__gallery gallery" data-test="gallery">
+    <section class="main__gallery gallery" data-test="gallery" id="gallery">
       <h2 class="gallery__title title" data-content="Фотогалерея">Фотогалерея</h2>
       <p>Добавляйте фото с хэштегом #лайфтур, <br>а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
 
@@ -606,7 +598,7 @@
 
   <footer class="page__footer footer-section" data-test="footer">
 
-    <div class="footer-section__contacts contacts">
+    <div class="footer-section__contacts contacts" id="contacts">
       <h2 class="contacts__title title" data-content="Контакты">Контакты</h2>
       <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
 
@@ -641,22 +633,22 @@
 
       <ul class="footer__list footer-navigation">
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Туры</a>
+          <a class="footer-navigation__link" href="#tours">Туры</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Обучение</a>
+          <a class="footer-navigation__link" href="#training">Обучение</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">О нас</a>
+          <a class="footer-navigation__link" href="#about">О нас</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Отзывы</a>
+          <a class="footer-navigation__link" href="#reviews">Отзывы</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Фотографии</a>
+          <a class="footer-navigation__link" href="#gallery">Фотографии</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Контакты</a>
+          <a class="footer-navigation__link" href="#contacts">Контакты</a>
         </li>
       </ul>
 
@@ -668,7 +660,7 @@
         <li class="social__item"><a class="social__link social__link--reddit" href="#"><span class="visually-hidden">REDDIT</span></a></li>
       </ul>
 
-      <a href="" class="footer__copyright-link">Политика конфиденциальности</a>
+      <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
     </div>
   </footer>
 
