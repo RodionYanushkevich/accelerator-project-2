@@ -108,6 +108,7 @@
 
   padding: 20px;
   text-decoration: none;
+
   color: inherit;
   background-color: $base-secondary;
 
@@ -122,4 +123,26 @@
   @media ($desktop-breakpoint) {
     margin-top: 10px;
   }
+
+  &:hover {
+    background-color: $base-white;
+    outline: 1px solid $primary-lighter;
+    color: $primary-lighter;
+  }
+
+  &:focus-visible {
+    background-color: $base-white;
+    outline: none;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-lighter;
+
+    color: inherit;
+  }
+}
+
+.hero-card__link--disabled {
+  background-color: #999999;
 }
