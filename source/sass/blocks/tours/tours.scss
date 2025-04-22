@@ -15,8 +15,6 @@
     padding: 103px 120px;
     row-gap: 50px;
     max-width: $desktop;
-
-    // padding: 100px 120px;
   }
 }
 
@@ -44,17 +42,6 @@
   text-transform: uppercase;
   color: inherit;
 
-  // &::after {
-  //   content: "";
-  //   display: inline-block;
-  //   width: 9px;
-  //   height: 14px;
-
-  //   background-color: transparent;
-  //   background-size: 100%;
-  //   background-image: url("/__spritemap#sprite-arrow-right-view");
-  // }
-
   @media ($tablet-breakpoint) {
     font-size: 16px;
   }
@@ -68,6 +55,20 @@
   &:hover {
     opacity: 0.2;
     color: $base-secondary;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $base-secondary;
+  }
+
+  &:active {
+    color: $base-primary;
+  }
+
+  &--disabled {
+    color: #999999;
+    pointer-events: none;
   }
 }
 

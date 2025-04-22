@@ -141,8 +141,9 @@
 
     color: inherit;
   }
-}
 
-.hero-card__link--disabled {
-  background-color: #999999;
+  &--disabled {
+    background-color: #999999;
+    pointer-events: none;
+  }
 }

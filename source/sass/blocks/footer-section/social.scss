@@ -29,4 +29,23 @@
     background-size: 14px 15px;
     background-image: url("/__spritemap#sprite-reddit-view");
   }
+
+  &:hover {
+    border: 1px solid $base-primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    border: none;
+    background-color: $base-secondary;
+    color: $base-white;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
 }
