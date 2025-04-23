@@ -16,40 +16,32 @@
 </head>
 
 <body class="page__body body">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
   <header class="body__header header" data-test="header">
     <a class="header__logo-link" href="#">
       <img class="header__logo-image logo-image" src="img/logo.svg" alt="Логотип Lifetour" width="142" height="42">
     </a>
-
     <button class="header__button" type="button">
       <span class="visually-hidden">
         кнопка выпадающего меню навигации</span></button>
-
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Туры</a>
+          <a class="navigation__link" href="#tours">Туры</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Обучение</a>
+          <a class="navigation__link" href="#training">Обучение</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">О нас</a>
+          <a class="navigation__link" href="#about">О нас</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Отзывы</a>
+          <a class="navigation__link" href="#reviews">Отзывы</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Фотографии</a>
+          <a class="navigation__link" href="#gallery">Фотографии</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link" href="#">Контакты</a>
+          <a class="navigation__link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -66,7 +58,7 @@
           <li class="hero__list-item hero-card swiper-slide">
             <h2>Захватывающие вершины Кавказа</h2>
             <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-            <a class="hero-card__link" href="#">
+            <a class="hero-card__link" title="перейти на страницу тура" href="#">
               Смотреть тур
             </a>
           </li>
@@ -74,7 +66,7 @@
             <h2>Невероятная
               природа Камчатки</h2>
             <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-            <a class="hero-card__link" href="#">
+            <a class="hero-card__link" title="перейти на страницу тура" href="#">
               Смотреть тур
             </a>
             <!-- <picture>
@@ -104,7 +96,7 @@
       </div>
     </section>
 
-    <section class="main__tours tours" data-test="tours">
+    <section class="main__tours tours" data-test="tours" id="tours">
       <h2 class="tours__title title" data-content="Ближайшие туры">Ближайшие туры</h2>
 
       <div class="tours__swiper swiper-container">
@@ -124,7 +116,7 @@
             <dl class="tours-card__details">
               <dt class="tours-card__details-title">Сложность:</dt>
               <dd class="tours-card__details-description">
-                <span class="visually-hidden">рейтинг сложности 4 из 5ти</span>
+                <span class="visually-hidden">рейтинг сложности 4 из 5-ти</span>
                 <svg height="16" width="16">
                   <use href="__spritemap#sprite-star-icon-fill"></use>
                 </svg>
@@ -237,11 +229,15 @@
 
       </div>
 
-      <a class="tours__link" href="#">Показать все туры</a>
+      <a class="tours__link" href="#"><span>Показать все туры</span>
+        <svg width="9" height="14">
+          <use href="/__spritemap#sprite-arrow-right"></use>
+        </svg>
+      </a>
 
     </section>
 
-    <section class="main__training training" data-test="training">
+    <section class="main__training training" data-test="training" id="training">
       <div class="training__title-container">
         <h2 class="training__title title" data-content="Обучение">Обучение</h2>
 
@@ -293,8 +289,14 @@
               <figcaption>
                 <h4>Надежда Колесниченко</h4>
               </figcaption>
-              <a class="training-card__figure-link" href="#" title="Надежда Колесниченко профиль VK"><span class="visually-hidden">VK</span></a>
             </figure>
+
+            <a class="training-card__link" href="#" title="Надежда Колесниченко профиль VK">
+              <svg width="14" height="8" aria-label="VK">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+
             <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
           </li>
           <!-- слайд 4 -->
@@ -348,7 +350,7 @@
 
     </section>
 
-    <section class="main__about about" data-test="about">
+    <section class="main__about about" data-test="about" id="about">
       <h2>О нас</h2>
 
       <div class="about__wrapper">
@@ -361,7 +363,7 @@
       </div>
     </section>
 
-    <section class="main__reviews reviews" data-test="reviews">
+    <section class="main__reviews reviews" data-test="reviews" id="reviews">
       <h2 class="reviews__title title" data-content="Отзывы">Отзывы</h2>
 
       <div class="reviews__swiper swiper-container">
@@ -500,7 +502,7 @@
       </div>
     </section>
 
-    <section class="main__gallery gallery" data-test="gallery">
+    <section class="main__gallery gallery" data-test="gallery" id="gallery">
       <h2 class="gallery__title title" data-content="Фотогалерея">Фотогалерея</h2>
       <p>Добавляйте фото с хэштегом #лайфтур, <br>а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
 
@@ -606,7 +608,7 @@
 
   <footer class="page__footer footer-section" data-test="footer">
 
-    <div class="footer-section__contacts contacts">
+    <div class="footer-section__contacts contacts" id="contacts">
       <h2 class="contacts__title title" data-content="Контакты">Контакты</h2>
       <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
 
@@ -637,38 +639,63 @@
     </div>
 
     <div class="footer-section__footer footer">
-      <img class="footer__logo-image" src="img/footer-logo.svg" alt="Логотип Lifetour" width="142" height="42">
+
+      <a class="footer__logo-link" href="#">
+        <img class="footer__logo-image" src="img/footer-logo.svg" alt="Логотип Lifetour" width="142" height="42">
+      </a>
 
       <ul class="footer__list footer-navigation">
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Туры</a>
+          <a class="footer-navigation__link" href="#tours">Туры</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Обучение</a>
+          <a class="footer-navigation__link" href="#training">Обучение</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">О нас</a>
+          <a class="footer-navigation__link" href="#about">О нас</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Отзывы</a>
+          <a class="footer-navigation__link" href="#reviews">Отзывы</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Фотографии</a>
+          <a class="footer-navigation__link" href="#gallery">Фотографии</a>
         </li>
         <li class="footer-navigation__list-item">
-          <a class="footer-navigation__link" href="#">Контакты</a>
+          <a class="footer-navigation__link" href="#contacts">Контакты</a>
         </li>
       </ul>
 
       <a class="footer__tel-link" href="tel:88007253232">8 800 725-32-32</a>
 
       <ul class="footer__social social">
-        <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">VK</span></a></li>
-        <li class="social__item"><a class="social__link social__link--ok" href="#"><span class="visually-hidden">OK</span></a></li>
-        <li class="social__item"><a class="social__link social__link--reddit" href="#"><span class="visually-hidden">REDDIT</span></a></li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+
+            <svg width="16" height="9" aria-label="мы в VK">
+              <use href="/__spritemap#sprite-vk"></use>
+            </svg>
+
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--ok" href="#">
+
+            <svg width="9" height="16" aria-label="Одноклассники">
+              <use href="/__spritemap#sprite-ok"></use>
+            </svg>
+
+          </a>
+        </li>
+        <li class="social__item"><a class="social__link social__link--reddit" href="#">
+
+            <svg width="14" height="15" aria-label="Реддит">
+              <use href="/__spritemap#sprite-reddit"></use>
+            </svg>
+
+          </a></li>
       </ul>
 
-      <a href="" class="footer__copyright-link">Политика конфиденциальности</a>
+      <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
     </div>
   </footer>
 

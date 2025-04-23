@@ -43,15 +43,43 @@
   @media ($desktop-breakpoint) {
     min-width: 360px;
   }
+
+  &:hover {
+    outline: 1px solid $base-secondary;
+  }
+
+  &:focus {
+    outline: 1px solid $base-primary;
+  }
+
+  &:invalid {
+    outline: 1px solid #ff121f;
+  }
+
+  &:placeholder-shown {
+    outline: 1px solid rgba(2, 102, 193, 0.1);
+  }
+
+  &:disabled {
+    outline: 1px solid #999999;
+    opacity: 0.5;
+  }
+}
+
+.form__input:focus + .form__label {
+  display: none;
+}
+
+.form__input:focus::placeholder {
+  color: $base-primary;
+  opacity: 0.5;
 }
 
 .form__input::placeholder {
   font-size: 16px;
   line-height: 16px;
-}
-
-.form__input::placeholder {
   color: transparent;
+  user-select: none;
 }
 
 .form__label {
@@ -64,6 +92,7 @@
 
   opacity: 0.5;
   transform: translateY(-50%);
+  cursor: text;
 
   @media ($tablet-breakpoint) {
     top: 50%;
@@ -98,5 +127,27 @@
 
   @media ($desktop-breakpoint) {
     width: 180px;
+  }
+
+  &:hover {
+    background-color: $base-white;
+    outline: 1px solid $primary-lighter;
+    color: $primary-lighter;
+  }
+
+  &:focus-visible {
+    background-color: $base-white;
+    outline: none;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: inherit;
+    background-color: $primary-lighter;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    pointer-events: none;
   }
 }
