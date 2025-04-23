@@ -54,15 +54,39 @@
 }
 
 .footer-navigation__link {
+  box-sizing: border-box;
   color: inherit;
   text-decoration: none;
+  padding: 3px 5px;
 
-  @media ($tablet-breakpoint) {
-    padding: 3px;
-  }
+  // width: auto;
+
+  // @media ($tablet-breakpoint) {
+  //   padding: 3px;
+  // }
 
   @media ($desktop-breakpoint) {
     font-size: 16px;
+  }
+
+  &:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px solid $base-primary;
+  }
+
+  &:focus-visible {
+    outline-offset: -1px;
+    outline: 1px solid $base-primary;
+  }
+
+  &:active {
+    color: $base-secondary;
+    border: none;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    color: #999999;
   }
 }
 

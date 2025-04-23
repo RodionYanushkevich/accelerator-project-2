@@ -4,7 +4,9 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
 
@@ -13,17 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-
-  &--vk {
-    background-size: 16px 9px;
-    background-image: url("/__spritemap#sprite-vk-view");
-  }
-
-
-  &--ok {
-    background-size: 9px 16px;
-    background-image: url("/__spritemap#sprite-ok-view");
-  }
+  color: inherit;
 
   &--reddit {
     background-size: 14px 15px;
@@ -31,7 +23,7 @@
   }
 
   &:hover {
-    border: 1px solid $base-primary;
+    outline: 1px solid $base-primary;
   }
 
   &:focus-visible {
@@ -41,11 +33,13 @@
 
   &:active {
     border: none;
+    outline: none;
     background-color: $base-secondary;
     color: $base-white;
   }
 
   &--disabled {
     opacity: 0.3;
+    pointer-events: none;
   }
 }

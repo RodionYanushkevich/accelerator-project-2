@@ -639,7 +639,10 @@
     </div>
 
     <div class="footer-section__footer footer">
-      <img class="footer__logo-image" src="img/footer-logo.svg" alt="Логотип Lifetour" width="142" height="42">
+
+      <a class="footer__logo-link" href="#">
+        <img class="footer__logo-image" src="img/footer-logo.svg" alt="Логотип Lifetour" width="142" height="42">
+      </a>
 
       <ul class="footer__list footer-navigation">
         <li class="footer-navigation__list-item">
@@ -665,9 +668,31 @@
       <a class="footer__tel-link" href="tel:88007253232">8 800 725-32-32</a>
 
       <ul class="footer__social social">
-        <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">VK</span></a></li>
-        <li class="social__item"><a class="social__link social__link--ok" href="#"><span class="visually-hidden">OK</span></a></li>
-        <li class="social__item"><a class="social__link social__link--reddit" href="#"><span class="visually-hidden">REDDIT</span></a></li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+
+            <svg width="16" height="9" aria-label="мы в VK">
+              <use href="/__spritemap#sprite-vk"></use>
+            </svg>
+
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--ok" href="#">
+
+            <svg width="9" height="16" aria-label="Одноклассники">
+              <use href="/__spritemap#sprite-ok"></use>
+            </svg>
+
+          </a>
+        </li>
+        <li class="social__item"><a class="social__link social__link--reddit" href="#">
+
+            <svg width="14" height="15" aria-label="Реддит">
+              <use href="/__spritemap#sprite-reddit"></use>
+            </svg>
+
+          </a></li>
       </ul>
 
       <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
