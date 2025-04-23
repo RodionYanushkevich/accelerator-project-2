@@ -24,11 +24,6 @@
   }
 }
 
-.tours-card:not(:first-child) {
-  display: none;
-}
-
-
 .tours-card__destination-wrapper {
   order: -1;
 
@@ -167,25 +162,97 @@
 }
 
 .tours-card--elbrus {
-  background-image: url("/img/tours/tours-card1-mobile@1x.webp");
+  background-image: url("/img/tours/elbrus/tours-elbrus-mobile@1x.webp");
 
   @media ($tablet-breakpoint) {
-    background-image: url("/img/tours/tours-card1-tablet@1x.webp");
+    background-image: url("/img/tours/elbrus/tours-elbrus-tablet@1x.webp");
   }
 
   @media ($desktop-breakpoint) {
-    background-image: url("/img/tours/tours-card1-desktop@1x.webp");
+    background-image: url("/img/tours/elbrus/tours-elbrus-desktop@1x.webp");
   }
 
   @media (resolution >= 2dppx) {
-    background-image: url("/img/tours/tours-card1-mobile@2x.webp");
+    background-image: url("/img/tours/elbrus/tours-elbrus-mobile@2x.webp");
 
     @media ($tablet-breakpoint) {
-      background-image: url("/img/tours/tours-card1-tablet@2x.webp");
+      background-image: url("/img/tours/elbrus/tours-elbrus-tablet@2x.webp");
     }
 
     @media ($desktop-breakpoint) {
-      background-image: url("/img/tours/tours-card1-desktop@2x.webp");
+      background-image: url("/img/tours/elbrus/tours-elbrus-desktop@2x.webp");
+    }
+  }
+}
+
+.tours-card--belukha {
+  background-image: url("/img/tours/belukha/tours-belukha-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    background-image: url("/img/tours/belukha/tours-belukha-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    background-image: url("/img/tours/belukha/tours-belukha-desktop@1x.webp");
+  }
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/tours/belukha/tours-belukha-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/tours/belukha/tours-belukha-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/tours/belukha/tours-belukha-desktop@2x.webp");
+    }
+  }
+}
+
+.tours-card--fishn {
+  background-image: url("/img/tours/fishn/tours-fishn-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    background-image: url("/img/tours/fishn/tours-fishn-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    background-image: url("/img/tours/fishn/tours-fishn-desktop@1x.webp");
+  }
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/tours/fishn/tours-fishn-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/tours/fishn/tours-fishn-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/tours/fishn/tours-fishn-desktop@2x.webp");
+    }
+  }
+}
+
+.tours-card--manaraga {
+  background-image: url("/img/tours/manaraga/tours-manaraga-mobile@1x.webp");
+
+  @media ($tablet-breakpoint) {
+    background-image: url("/img/tours/manaraga/tours-manaraga-tablet@1x.webp");
+  }
+
+  @media ($desktop-breakpoint) {
+    background-image: url("/img/tours/manaraga/tours-manaraga-desktop@1x.webp");
+  }
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/tours/manaraga/tours-manaraga-mobile@2x.webp");
+
+    @media ($tablet-breakpoint) {
+      background-image: url("/img/tours/manaraga/tours-manaraga-tablet@2x.webp");
+    }
+
+    @media ($desktop-breakpoint) {
+      background-image: url("/img/tours/manaraga/tours-manaraga-desktop@2x.webp");
     }
   }
 }

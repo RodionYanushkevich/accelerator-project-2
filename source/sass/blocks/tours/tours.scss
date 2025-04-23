@@ -72,9 +72,13 @@
   }
 }
 
+.tours__swiper {
+  width: 290px;
+  overflow: hidden;
+}
 
 // BVBBBBBBBBUUUTOOONS HIDDEN
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
+// .swiper-button-prev,
+// .swiper-button-next {
+//   display: none;
+// }
