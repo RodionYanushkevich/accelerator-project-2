@@ -16,12 +16,12 @@
   color: $base-white;
 
   @media ($tablet-breakpoint) {
-    max-width: 330px;
+    width: 330px;
   }
 
-  @media ($tablet-breakpoint) {
-    max-width: 380px;
-  }
+  // @media ($tablet-breakpoint) {
+  //   max-width: 380px;
+  // }
 }
 
 .tours-card__destination-wrapper {
@@ -30,7 +30,11 @@
   display: flex;
   align-items: center;
 
+  flex-wrap: wrap;
+  justify-content: space-between;
   column-gap: 5px;
+
+  row-gap: 12px;
 
   font-weight: 500;
   font-size: 12px;
@@ -47,7 +51,7 @@
   column-gap: 9px;
   padding: 8px 12px 8px 16px;
 
-  min-width: 90px;
+  // min-width: 90px;
   min-height: 28px;
   text-align: right;
 
@@ -78,7 +82,7 @@
   background-color: transparent;
   background-size: 100%;
 
-  min-width: 74px;
+  // min-width: 74px;
 
   &::before {
     content: "";
@@ -162,6 +166,7 @@
 }
 
 .tours-card--elbrus {
+  background-size: 100%;
   background-image: url("/img/tours/elbrus/tours-elbrus-mobile@1x.webp");
 
   @media ($tablet-breakpoint) {
@@ -255,4 +260,9 @@
       background-image: url("/img/tours/manaraga/tours-manaraga-desktop@2x.webp");
     }
   }
+}
+
+.tours-card__duration-wrapper {
+  display: flex;
+  gap: 14px;
 }

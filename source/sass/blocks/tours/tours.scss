@@ -1,4 +1,5 @@
 .tours {
+  position: relative;
   box-sizing: border-box;
   padding: 20px 15px;
   display: flex;
@@ -73,12 +74,12 @@
 }
 
 .tours__swiper {
-  width: 290px;
+  align-self: center;
   overflow: hidden;
-}
+  width: 290px;
+  height: 416px;
 
-// BVBBBBBBBBUUUTOOONS HIDDEN
-// .swiper-button-prev,
-// .swiper-button-next {
-//   display: none;
-// }
+  @media ($tablet-breakpoint) {
+    width: 100%;
+  }
+}
