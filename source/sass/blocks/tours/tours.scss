@@ -84,3 +84,22 @@
     width: 100%;
   }
 }
+
+.tours__swiper-button {
+  top: 60px;
+  right: 45px;
+
+  @media ($desktop-breakpoint) {
+    top: 120px;
+    right: 120px;
+  }
+}
+
+.tours__swiper-button.swiper-button-prev {
+  right: 86px;
+
+  @media ($desktop-breakpoint) {
+    right: 161px;
+  }
+}
+

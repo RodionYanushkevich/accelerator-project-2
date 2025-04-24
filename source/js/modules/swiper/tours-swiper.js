@@ -9,8 +9,8 @@ new Swiper('.tours__swiper', {
   slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.tours__swiper-button.swiper-button-next',
+    prevEl: '.tours__swiper-button.swiper-button-prev',
   },
   breakpoints: {
     768: {

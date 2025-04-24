@@ -1,7 +1,5 @@
 .swiper-button {
   position: absolute;
-  top: 60px;
-  right: 45px;
   display: none;
 
   @media ($tablet-breakpoint) {
@@ -16,8 +14,6 @@
     background-color: $base-secondary;
     color: $base-white;
     border: none;
-
-    // z-index: 10;
 
     cursor: pointer;
   }
@@ -49,6 +45,5 @@
 }
 
 .swiper-button-prev {
-  right: 86px;
   transform: rotate(180deg);
 }

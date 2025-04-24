@@ -9,10 +9,10 @@ new Swiper('.training__swiper', {
   slidesPerView: 1,
   spaceBetween: 20,
   initialSlide: 2,
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
+  navigation: {
+    nextEl: '.training__swiper-button.swiper-button-next',
+    prevEl: '.training__swiper-button.swiper-button-prev',
+  },
   breakpoints: {
     768: {
       initialSlide: 0,
@@ -20,7 +20,9 @@ new Swiper('.training__swiper', {
       slidesPerView: 3,
     },
     1440: {
-      slidesPerView: 3,
+      spaceBetween: 20,
+
+      slidesPerView: 4,
       simulateTouch: false,
     },
   },

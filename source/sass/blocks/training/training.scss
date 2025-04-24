@@ -95,6 +95,7 @@
 }
 
 .training__swiper {
+  position: relative;
   box-sizing: border-box;
   align-self: center;
   width: $mobile;
@@ -104,10 +105,12 @@
   @media ($tablet-breakpoint) {
     width: 678px;
     padding: 0;
+  }
 
-    // padding: 0 45px;
+  @media ($desktop-breakpoint) {
+    width: 1200px;
 
-    // overflow: hidden;
+    // padding: 0;
   }
 }
 
@@ -121,11 +124,13 @@
   margin: 0;
   list-style: none;
   padding: 0;
+}
 
-  @media ($tablet-breakpoint) {
-    // padding: 0 45px;
-    // width: $tablet;
+.training__swiper-button {
+  top: 0;
+  right: 0;
+}
 
-    // overflow: hidden;
-  }
+.training__swiper-button.swiper-button-prev {
+  right: 41px;
 }
