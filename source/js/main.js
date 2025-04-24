@@ -1,3 +1,4 @@
 import 'swiper/css';
 
 import '../js/modules/swiper/tours-swiper.js';
+import '../js/modules/swiper/traning-swiper.js';

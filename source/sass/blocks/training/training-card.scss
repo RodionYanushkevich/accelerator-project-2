@@ -7,34 +7,39 @@
   padding: 15px;
 
   width: 290px;
+  min-height: 356px;
+  outline-offset: -1px;
   outline: 1px solid rgba(2, 102, 193, 0.1);
+
+  background-color: $base-white;
 
   @media ($tablet-breakpoint) {
     width: 212.67px;
+    height: 388px;
     padding: 15px 15px 47px;
   }
 
   @media ($desktop-breakpoint) {
-    width: 285px;
+    width: 290px;
     padding: 15px 15px 31px;
   }
 }
 
-.training-card {
-  &:not(:nth-child(3)) {
-    display: none;
+// .training-card {
+//   &:not(:nth-child(3)) {
+//     display: none;
 
-    @media ($tablet-breakpoint) {
-      display: flex;
-    }
-  }
+//     @media ($tablet-breakpoint) {
+//       display: flex;
+//     }
+//   }
 
-  @media ($tablet-breakpoint) {
-    &:not(:nth-child(1)) {
-      display: none;
-    }
-  }
-}
+//   @media ($tablet-breakpoint) {
+//     &:not(:nth-child(1)) {
+//       display: none;
+//     }
+//   }
+// }
 
 
 .training-card__figure {

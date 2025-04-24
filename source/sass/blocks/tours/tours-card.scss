@@ -19,9 +19,9 @@
     width: 330px;
   }
 
-  // @media ($tablet-breakpoint) {
-  //   max-width: 380px;
-  // }
+  @media ($desktop-breakpoint) {
+    width: 380px;
+  }
 }
 
 .tours-card__destination-wrapper {

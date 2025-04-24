@@ -2,21 +2,22 @@ import Swiper from 'swiper';
 
 import {Navigation} from 'swiper/modules';
 
-new Swiper('.tours__swiper', {
+new Swiper('.training__swiper', {
   modules: [Navigation],
   loop: false,
   speed: 300,
   slidesPerView: 1,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  spaceBetween: 20,
+  initialSlide: 2,
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
   breakpoints: {
     768: {
-      spaceBetween: 18,
-
-      slidesPerView: 2,
+      initialSlide: 0,
+      spaceBetween: 20,
+      slidesPerView: 3,
     },
     1440: {
       slidesPerView: 3,

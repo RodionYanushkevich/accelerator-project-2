@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 100%;
   max-width: $desktop;
   padding: 18px 15px 20px;
@@ -64,22 +65,16 @@
   }
 }
 
-.training__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .training__swiper-title {
   position: relative;
   bottom: -0.2em;
   margin: 0;
-  padding: 0;
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
   margin-bottom: 25px;
+
+  // padding: 0 15px;
 
   @media ($tablet-breakpoint) {
     bottom: -0.2em;
@@ -99,3 +94,38 @@
   }
 }
 
+.training__swiper {
+  box-sizing: border-box;
+  align-self: center;
+  width: $mobile;
+  overflow: hidden;
+  padding: 0 15px;
+
+  @media ($tablet-breakpoint) {
+    width: 678px;
+    padding: 0;
+
+    // padding: 0 45px;
+
+    // overflow: hidden;
+  }
+}
+
+.training__list-item {
+  @media ($tablet-breakpoint) {
+    width: 212.67px;
+  }
+}
+
+.training__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+
+  @media ($tablet-breakpoint) {
+    // padding: 0 45px;
+    // width: $tablet;
+
+    // overflow: hidden;
+  }
+}
