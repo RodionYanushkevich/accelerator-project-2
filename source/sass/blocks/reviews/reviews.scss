@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,8 @@
     // padding: 41px 45px;
     padding: 41px 45px 39px;
     row-gap: 25px;
+
+    overflow: hidden;
   }
 
   @media ($desktop-breakpoint) {
@@ -39,5 +42,33 @@
   &::before {
     top: unset;
     bottom: 24px;
+  }
+}
+
+.reviews__swiper {
+  @media ($tablet-breakpoint) {
+    width: 565px;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 700px;
+  }
+}
+
+.reviews__swiper-button {
+  top: 61px;
+  left: calc(50% + 302px);
+
+  @media ($desktop-breakpoint) {
+    top: 147px;
+    left: calc(50% + 563px);
+  }
+}
+
+.reviews__swiper-button.swiper-button-prev {
+  left: calc(50% + 261px);
+
+  @media ($desktop-breakpoint) {
+    left: calc(50% + 522px);
   }
 }
