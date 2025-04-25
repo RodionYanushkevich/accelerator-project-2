@@ -51,6 +51,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media ($desktop-breakpoint) {
+    width: 820px;
+  }
 }
 
 .training__title-container br {

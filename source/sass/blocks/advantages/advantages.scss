@@ -1,8 +1,10 @@
 .advantages {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   row-gap: 22px;
   padding: 18px 15px 20px;
+  max-width: 1440px;
 
   @media ($tablet-breakpoint) {
     flex-wrap: wrap;
@@ -48,7 +50,14 @@
 
   @media ($desktop-breakpoint) {
     flex-wrap: nowrap;
-    max-width: 1200px;
+
+    // max-width: 1440px;
+  }
+}
+
+.advantages__list-item {
+  @media ($desktop-breakpoint) {
+    max-width: 380px;
   }
 }
 
@@ -63,5 +72,12 @@
 
   &::before {
     top: 5px;
+  }
+}
+
+.advantages__swiper {
+  @media ($desktop-breakpoint) {
+    box-sizing: border-box;
+    width: 1400px;
   }
 }

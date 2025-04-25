@@ -4,13 +4,12 @@
   flex-direction: column;
   width: 290px;
   padding: 20px;
-
+  justify-self: center;
   row-gap: 15px;
   outline: 1px solid $base-white;
   box-shadow: 0 0 20px rgba(28, 51, 116, 0.1);
 
   @media ($tablet-breakpoint) {
-    align-self: start;
     width: 565px;
     display: grid;
     grid-template-columns: 186px 1fr;
