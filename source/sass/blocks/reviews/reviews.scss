@@ -10,6 +10,9 @@
   // padding: 21px 15px;
   row-gap: 17px;
 
+  // !!!
+  overflow: hidden;
+
   @media ($tablet-breakpoint) {
     // padding: 41px 45px;
     padding: 41px 45px 39px;

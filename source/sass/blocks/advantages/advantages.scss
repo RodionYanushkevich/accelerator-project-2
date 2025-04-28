@@ -1,4 +1,6 @@
 .advantages {
+  position: relative;
+
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -22,11 +24,14 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 100px 120px 185px;
+    padding: 100px 0 185px;
+
+    // padding: 100px 120px 185px;
 
     row-gap: 50px;
     justify-content: start;
-    overflow: hidden;
+
+    // overflow: hidden;
     background: none;
   }
 }
@@ -50,6 +55,9 @@
 
   @media ($desktop-breakpoint) {
     flex-wrap: nowrap;
+    justify-content: unset;
+
+    gap: 0;
 
     // max-width: 1440px;
   }
@@ -58,6 +66,7 @@
 .advantages__list-item {
   @media ($desktop-breakpoint) {
     max-width: 380px;
+    width: 380px;
   }
 }
 
@@ -78,6 +87,23 @@
 .advantages__swiper {
   @media ($desktop-breakpoint) {
     box-sizing: border-box;
-    width: 1400px;
+    width: 1200px;
+
+    // max-width: 1440px;
   }
+}
+
+.advantages__swiper-button {
+  display: none;
+  bottom: 101px;
+  left: calc(50% + 2px);
+
+  @media ($desktop-breakpoint) {
+    display: flex;
+  }
+}
+
+.advantages__swiper-button.swiper-button-prev {
+  transform: translateX(-100%) rotate(180deg);
+  left: calc(50% - 2px);
 }
