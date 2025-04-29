@@ -7,7 +7,7 @@ const nextButton = document.querySelector('.advantages__swiper-button.swiper-but
 const prevButton = document.querySelector('.advantages__swiper-button.swiper-button-prev');
 const clones = [];
 
-export const classListToggle = (swiperContainer) => {
+const classListToggle = (swiperContainer) => {
   swiperContainer.classList.toggle('swiper-container');
   const swiperWrapper = swiperContainer.children[0];
   swiperWrapper.classList.toggle('swiper-wrapper');
@@ -118,4 +118,4 @@ prevButton.addEventListener ('click', ()=> {
 window.addEventListener('resize', resizeListener);
 resizeListener();
 
-
+export { classListToggle };

@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-import {classListToggle} from './advantages-swiper';
+import {classListToggle} from './advantages-swiper.js';
+
 const gallerySwiperContainer = document.querySelector('.gallery__swiper');
 
 let gallerySwiper = null;
@@ -9,15 +10,11 @@ let gallerySwiper = null;
 const initSwiper = () => {
   gallerySwiper = new Swiper(gallerySwiperContainer, {
     modules: [Navigation],
-    // loop:true,
     speed: 300,
     spaceBetween: 5,
     slidesPerView: 2,
-    // centeredSlides: true,
-    // initialSlide: 2,
     breakpoints: {
       768: {
-        // spaceBetween: 30,
         slidesPerView: 3,
       },
     },
@@ -27,6 +24,7 @@ const initSwiper = () => {
     },
   });
 };
+
 // проверка ?
 const destroySwiper = () => {
   if (gallerySwiper) {
@@ -47,5 +45,3 @@ const resizeListener = () => {
 
 window.addEventListener('resize', resizeListener);
 resizeListener();
-
-
