@@ -1,3 +1,15 @@
+.navigation {
+  margin-top: 19px;
+
+  @media ($tablet-breakpoint) {
+    margin-top: 37px;
+  }
+
+  @media ($desktop-breakpoint) {
+    margin: 0;
+  }
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -25,12 +37,28 @@
   }
 }
 
+.navigation__list-item {
+  padding: 11px 0;
+
+  @media ($tablet-breakpoint) {
+    padding: 13px 0;
+  }
+
+  @media ($desktop-breakpoint) {
+    padding: 0;
+  }
+}
+
 .navigation__link {
   box-sizing: border-box;
   color: inherit;
   text-decoration: none;
 
-  padding: 3px 5px;
+  padding: 3px;
+
+  @media ($tablet-breakpoint) {
+    padding: 3px 5px;
+  }
 
   &:hover {
     padding-bottom: 2px;
