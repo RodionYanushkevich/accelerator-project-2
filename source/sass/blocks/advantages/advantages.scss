@@ -24,10 +24,10 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 100px 0 185px;
+    // padding: 100px 0 185px;
 
-    // padding: 100px 120px 185px;
-
+    padding: 100px 120px 185px;
+    overflow: hidden;
     row-gap: 50px;
     justify-content: start;
 
