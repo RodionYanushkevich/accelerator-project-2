@@ -3,15 +3,20 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  min-width: $mobile;
 }
 
 .page__body {
   height: 100%;
   display: flex;
   flex-direction: column;
-
   flex-grow: 1;
   align-items: center;
+  margin-top: 100px;
+
+  @media ($desktop-breakpoint) {
+    margin: 0;
+  }
 }
 
 // На место потом

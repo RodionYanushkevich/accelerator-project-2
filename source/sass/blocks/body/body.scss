@@ -1,5 +1,4 @@
 .body {
-  min-width: $mobile;
   background-size: 346px;
   background-position: left calc(50% + 192px) top 678px;
   background-repeat: no-repeat;
@@ -27,4 +26,27 @@
       background-image: url("../img/background/background-mountain-desktop@2x.webp");
     }
   }
+}
+
+.body--overlay-shown {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(45, 56, 63, 0.6);
+    z-index: 9;
+  }
+
+  overflow: hidden;
+}
+
+.body__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }

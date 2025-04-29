@@ -1,6 +1,9 @@
 const button = document.querySelector('.header__button');
 const header = document.querySelector('.header');
+
+
 const navigationLinks = document.querySelectorAll('.navigation__link');
+const body = document.querySelector('.body');
 
 
 button.addEventListener('click', ()=>{
@@ -16,5 +19,6 @@ button.addEventListener('click', ()=>{
       link.setAttribute('tabindex', '0');
     });
   }
+  body.classList.toggle('body--overlay-shown');
 });
 

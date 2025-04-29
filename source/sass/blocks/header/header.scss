@@ -1,6 +1,7 @@
 .header {
   box-sizing: border-box;
   display: grid;
+  min-width: $mobile;
 
   grid-template-columns: repeat(2, auto);
   grid-template-rows: min-content minmax(30px, min-content) 0fr;
@@ -20,6 +21,7 @@
   }
 
   @media ($desktop-breakpoint) {
+    position: unset;
     padding: 42px 120px 42px 152px;
     display: flex;
 
@@ -31,10 +33,6 @@
   &--menu-shown {
     grid-template-rows: min-content minmax(30px, min-content) 1fr;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
 
     @media ($tablet-breakpoint) {
       grid-template-rows: min-content  1fr;
@@ -142,7 +140,7 @@
   grid-column: 1/2;
   border: none;
   display: block;
-
+  order: 0;
   width: 26px;
   height: 26px;
   background-color: transparent;
@@ -158,6 +156,7 @@
     display: none;
   }
 
+  // Стили
   &:hover,
   &:focus-visible {
     outline: none;
@@ -166,6 +165,7 @@
 
   &:active {
     opacity: 0.5;
+    transform: translateY(2px);
   }
 
   &:disabled {
