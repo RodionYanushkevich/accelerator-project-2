@@ -14,6 +14,10 @@
   align-items: center;
   margin-top: 100px;
 
+  @media ($tablet-breakpoint) {
+    margin-top: 82px;
+  }
+
   @media ($desktop-breakpoint) {
     margin: 0;
   }

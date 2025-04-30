@@ -1,22 +1,14 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
+import {swiperClassListToggle} from '../util/util.js';
+
+
 let advantagesSwiper = null;
 const advantagesSwiperContainer = document.querySelector('.advantages__swiper');
 const nextButton = document.querySelector('.advantages__swiper-button.swiper-button-next');
 const prevButton = document.querySelector('.advantages__swiper-button.swiper-button-prev');
 const clones = [];
-
-const classListToggle = (swiperContainer) => {
-  swiperContainer.classList.toggle('swiper-container');
-  const swiperWrapper = swiperContainer.children[0];
-  swiperWrapper.classList.toggle('swiper-wrapper');
-
-  const swiperSlidesArray = Array.from(swiperWrapper.children);
-  swiperSlidesArray.forEach((slide) => {
-    slide.classList.toggle('swiper-slide');
-  });
-};
 
 const Slides = [];
 
@@ -50,13 +42,13 @@ const destroySwiper = () => {
 
     advantagesSwiper.destroy(true, true);
     advantagesSwiper = null;
-    classListToggle(advantagesSwiperContainer);
+    swiperClassListToggle(advantagesSwiperContainer);
   }
 };
 
 const resizeListener = () => {
   if (window.innerWidth >= 1440 && !advantagesSwiper) {
-    classListToggle(advantagesSwiperContainer);
+    swiperClassListToggle(advantagesSwiperContainer);
     initSwiper();
   } else if (window.innerWidth < 1440 && advantagesSwiper) {
     destroySwiper();
@@ -118,4 +110,3 @@ prevButton.addEventListener ('click', ()=> {
 window.addEventListener('resize', resizeListener);
 resizeListener();
 
-export { classListToggle };

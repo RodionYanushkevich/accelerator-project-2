@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-import {classListToggle} from './advantages-swiper.js';
+import {swiperClassListToggle} from '../util/util.js';
 
 const gallerySwiperContainer = document.querySelector('.gallery__swiper');
 
@@ -30,13 +30,13 @@ const destroySwiper = () => {
   if (gallerySwiper) {
     gallerySwiper.destroy(true, true);
     gallerySwiper = null;
-    classListToggle(gallerySwiperContainer);
+    swiperClassListToggle(gallerySwiperContainer);
   }
 };
 
 const resizeListener = () => {
   if (window.innerWidth < 1440 && !gallerySwiper) {
-    classListToggle(gallerySwiperContainer);
+    swiperClassListToggle(gallerySwiperContainer);
     initSwiper();
   } else if (window.innerWidth >= 1440 && gallerySwiper) {
     destroySwiper();
