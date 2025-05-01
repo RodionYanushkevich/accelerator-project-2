@@ -12,7 +12,8 @@
   min-height: 568px;
   background-repeat: no-repeat;
   background-size: 100%;
-
+  background-position: 0;
+  background-position-y: center;
 
   @media ($tablet-breakpoint) {
     justify-content: unset;
@@ -32,6 +33,7 @@
 
 .hero-card--kavkaz {
   background-image: url("/img/hero/slide-1/hero-mobile-card-1@1x.webp");
+  background-position-y: bottom;
 
   @media ($tablet-breakpoint) {
     background-image: url("/img/hero/slide-1/hero-tablet-card-1@1x.webp");
@@ -56,8 +58,10 @@
 
 .hero-card--kamchatka {
   background-image: url("/img/hero/slide-2/hero-mobile-card-2@1x.webp");
+  justify-content: start;
 
   @media ($tablet-breakpoint) {
+    position: relative;
     background-image: url("/img/hero/slide-2/hero-tablet-card-2@1x.webp");
   }
 
@@ -74,6 +78,39 @@
 
     @media ($desktop-breakpoint) {
       background-image: url("/img/hero/slide-2/hero-destkop-card-2@2x.webp");
+    }
+  }
+}
+
+.hero-card--kamchatka picture {
+  display: none;
+
+  @media ($tablet-breakpoint) {
+    position: absolute;
+    display: block;
+    z-index: 0;
+
+    &:first-of-type {
+      bottom: 211px;
+      left: 163px;
+    }
+
+    &:last-of-type {
+      bottom: 197px;
+      right: 163px;
+    }
+  }
+
+  @media ($desktop-breakpoint) {
+    &:first-of-type {
+      bottom: 206px;
+      left: unset;
+      right: 262px;
+    }
+
+    &:last-of-type {
+      bottom: 154px;
+      right: 120px;
     }
   }
 }

@@ -26,6 +26,7 @@
   }
 
   @media ($desktop-breakpoint) {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     font-weight: 400;

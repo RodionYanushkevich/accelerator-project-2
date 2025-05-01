@@ -81,6 +81,10 @@
   height: 416px;
 
   @media ($tablet-breakpoint) {
+    width: 678px;
+  }
+
+  @media ($desktop-breakpoint) {
     width: 100%;
   }
 }
