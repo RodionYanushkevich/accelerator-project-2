@@ -5,10 +5,12 @@ import {swiperClassListToggle} from '../util/util.js';
 
 
 let advantagesSwiper = null;
+
 const advantagesSwiperContainer = document.querySelector('.advantages__swiper');
 const nextButton = document.querySelector('.advantages__swiper-button.swiper-button-next');
 const prevButton = document.querySelector('.advantages__swiper-button.swiper-button-prev');
-const clones = [];
+
+// const clones = [];
 
 const Slides = [];
 
@@ -37,8 +39,8 @@ const initSwiper = () => {
 
 const destroySwiper = () => {
   if (advantagesSwiper) {
-    clones.forEach((clone) => clone.remove());
-    clones.length = 0;
+    // clones.forEach((clone) => clone.remove());
+    // clones.length = 0;
 
     advantagesSwiper.destroy(true, true);
     advantagesSwiper = null;

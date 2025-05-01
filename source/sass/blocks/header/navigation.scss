@@ -78,4 +78,8 @@
     pointer-events: none;
     color: #999999;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
