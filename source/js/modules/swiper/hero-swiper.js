@@ -8,11 +8,9 @@ const paginationContainer = document.querySelector('.hero__pagination.swiper-pag
 
 new Swiper('.hero__swiper', {
   modules: [EffectFade, Pagination],
-  simulateTouch: false,
-  allowTouchMove: false,
+  loop:true,
   speed: 800,
   slidesPerView: 1,
-  // spaceBetween: 20,
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
@@ -21,13 +19,18 @@ new Swiper('.hero__swiper', {
     el: paginationContainer,
     type:'bullets',
     clickable: true,
-    // bulletElement:'button',
-
     renderBullet: function (index) {
       return `<button class=" hero__pagination-bullet swiper-pagination-bullet" type="button">
       <span class="visually-hidden">кнопка пагинации туров слайд №${index + 1}
       </span>
       </button>`;
     },
-  }});
+  },
+  breakpoints: {
+    1440: {
+      allowTouchMove: false,
+      simulateTouch: false,
+    }
+  }
+});
 

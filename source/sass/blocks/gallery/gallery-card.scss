@@ -1,4 +1,10 @@
 
+.gallery-card.gallery-card--double-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .gallery-card__image {
   color: $base-white;
   background-color: #b4b2b3;

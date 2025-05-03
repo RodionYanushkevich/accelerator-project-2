@@ -53,14 +53,6 @@
   }
 }
 
-// !!!!! чужой блок
-.gallery-card:nth-child(even) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
 .gallery br {
   display: inline;
 

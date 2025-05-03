@@ -10,6 +10,7 @@ let gallerySwiper = null;
 const initSwiper = () => {
   gallerySwiper = new Swiper(gallerySwiperContainer, {
     modules: [Navigation],
+    loop:true,
     speed: 300,
     spaceBetween: 5,
     slidesPerView: 2,

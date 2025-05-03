@@ -58,10 +58,14 @@
 
 .hero-card--kamchatka {
   background-image: url("/img/hero/slide-2/hero-mobile-card-2@1x.webp");
-  justify-content: start;
+
 
   @media ($tablet-breakpoint) {
     position: relative;
+    justify-content: start;
+    padding: 37px 45px 56px;
+
+
     background-image: url("/img/hero/slide-2/hero-tablet-card-2@1x.webp");
   }
 
@@ -92,12 +96,12 @@
 
     &:first-of-type {
       bottom: 211px;
-      left: 163px;
+      right: calc(50% - 45px);
     }
 
     &:last-of-type {
       bottom: 197px;
-      right: 163px;
+      left: calc(50% - 15px);
     }
   }
 
@@ -105,10 +109,11 @@
     &:first-of-type {
       bottom: 206px;
       left: unset;
-      right: 262px;
+      right: 222px;
     }
 
     &:last-of-type {
+      left: unset;
       bottom: 154px;
       right: 120px;
     }
@@ -156,8 +161,8 @@
 
   @media ($desktop-breakpoint) {
     font-size: 77px;
-    width: 780px;
-
+    width: 944px;
+    z-index: 2;
     text-align: start;
   }
 }
@@ -180,7 +185,7 @@
   }
 
   @media ($desktop-breakpoint) {
-    width: 420px;
+    width: 464px;
     text-align: start;
   }
 }
@@ -234,4 +239,44 @@
     background-color: #999999;
     pointer-events: none;
   }
+}
+
+.hero-card__details-wrapper {
+  display: none;
+
+  color: inherit;
+
+  @media ($desktop-breakpoint) {
+    display: flex;
+    justify-self: flex-end;
+    gap: 10px;
+    margin-top: auto;
+  }
+}
+
+.hero-card__details-wrapper span {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  padding: 14px 20px 14px 40px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+
+  background-repeat: no-repeat;
+  background-position: center left 20.5px;
+}
+
+
+.hero-card__details-duration {
+  background-size: 11px 11px;
+  background-image: url("/__spritemap#sprite-moon-view");
+}
+
+.hero-card__details-complexity {
+  background-size: 10px 11px;
+  background-image: url("/__spritemap#sprite-level-view");
 }

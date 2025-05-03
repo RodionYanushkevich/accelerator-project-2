@@ -15,14 +15,14 @@
 
   @media ($tablet-breakpoint) {
     // padding: 41px 45px;
-    padding: 41px 45px 39px;
+    padding: 40px 45px 39px;
     row-gap: 25px;
 
     overflow: hidden;
   }
 
   @media ($desktop-breakpoint) {
-    padding: 98px 120px 73px;
+    padding: 100px 120px 73px;
     row-gap: 28px;
   }
 }
@@ -39,13 +39,15 @@
 
 .reviews__title {
   @media ($desktop-breakpoint) {
-    padding-top: 52px;
+    padding-top: 45px;
   }
 
-  &::before {
-    top: unset;
-    bottom: 24px;
-  }
+  //   &::before {
+
+  //     top: unset;
+  //     bottom: 24px;
+  //   }
+  // }
 }
 
 .reviews__swiper {
@@ -63,7 +65,7 @@
   left: calc(50% + 302px);
 
   @media ($desktop-breakpoint) {
-    top: 147px;
+    top: 145px;
     left: calc(50% + 563px);
   }
 }

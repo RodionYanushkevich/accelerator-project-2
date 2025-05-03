@@ -1,32 +1,32 @@
-.body {
-  background-size: 346px;
-  background-position: left calc(50% + 192px) top 678px;
-  background-repeat: no-repeat;
+// .body {
+//   background-size: 346px;
+//   background-position: left calc(50% + 192px) top 678px;
+//   background-repeat: no-repeat;
 
-  background-image: url("../img/background/background-mountain-mobile@1x.webp");
+//   background-image: url("../img/background/background-mountain-mobile@1x.webp");
 
-  @media ($tablet-breakpoint) {
-    background-size: 602px;
-    background-position: right -177px top 1124px;
-    background-image: url("../img/background/background-mountain-tablet@1x.webp");
-  }
+//   @media ($tablet-breakpoint) {
+//     background-size: 602px;
+//     background-position: right -177px top 1124px;
+//     background-image: url("../img/background/background-mountain-tablet@1x.webp");
+//   }
 
-  @media ($desktop-breakpoint) {
-    background-image: url("../img/background/background-mountain-desktop@1x.webp");
-  }
+//   @media ($desktop-breakpoint) {
+//     background-image: url("../img/background/background-mountain-desktop@1x.webp");
+//   }
 
-  @media (resolution >= 2dppx) {
-    background-image: url("../img/background/background-mountain-mobile@2x.webp");
+//   @media (resolution >= 2dppx) {
+//     background-image: url("../img/background/background-mountain-mobile@2x.webp");
 
-    @media ($tablet-breakpoint) {
-      background-image: url("../img/background/background-mountain-tablet@2x.webp");
-    }
+//     @media ($tablet-breakpoint) {
+//       background-image: url("../img/background/background-mountain-tablet@2x.webp");
+//     }
 
-    @media ($desktop-breakpoint) {
-      background-image: url("../img/background/background-mountain-desktop@2x.webp");
-    }
-  }
-}
+//     @media ($desktop-breakpoint) {
+//       background-image: url("../img/background/background-mountain-desktop@2x.webp");
+//     }
+//   }
+// }
 
 .body--overlay-shown {
   overflow: hidden;

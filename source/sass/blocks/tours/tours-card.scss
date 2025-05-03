@@ -116,7 +116,7 @@
 
   @media ($desktop-breakpoint) {
     // BR?
-    padding-right: 141px;
+    padding-right: 100px;
   }
 }
 
@@ -126,6 +126,7 @@
   width: 80px;
   height: 1px;
 
+  margin-top: -1px;
   background-color: $base-white;
 
   opacity: 0.2;
@@ -152,9 +153,10 @@
 .tours-card__details-title {
   grid-row: 1/2;
 
+  // margin-top: 1px;
   font-weight: 300;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 12px;
 }
 
 .tours-card__details-description {

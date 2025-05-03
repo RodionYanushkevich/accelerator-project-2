@@ -9,9 +9,9 @@
   outline: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $base-white;
 
-  &:last-child h3 {
-    margin-left: -4px;
-  }
+  // &:last-child h3 {
+  //   margin-left: -4px;
+  // }
 
   &--security::before {
     background-image: url("/__spritemap#sprite-security-icon-view");

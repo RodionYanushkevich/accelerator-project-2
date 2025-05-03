@@ -39,9 +39,6 @@ const initSwiper = () => {
 
 const destroySwiper = () => {
   if (advantagesSwiper) {
-    // clones.forEach((clone) => clone.remove());
-    // clones.length = 0;
-
     advantagesSwiper.destroy(true, true);
     advantagesSwiper = null;
     swiperClassListToggle(advantagesSwiperContainer);

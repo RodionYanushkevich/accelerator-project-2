@@ -12,7 +12,7 @@
   background-image: url("../img/background/about/background-about-mobile@1x.webp");
 
   @media ($tablet-breakpoint) {
-    padding: 38px 48px 40px;
+    padding: 38px 48px 41px;
     display: grid;
     grid-template-columns: calc(50% + 66px) auto;
 
@@ -23,7 +23,9 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 100px 120px 178px;
+    padding: 100px 120px 180px;
+
+    // padding: 100px 120px 178px;
     grid-template-columns: calc(50% - 59px) 585px;
 
     background-position: left top 100px;
