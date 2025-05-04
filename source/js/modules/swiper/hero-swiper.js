@@ -21,7 +21,7 @@ new Swiper('.hero__swiper', {
     clickable: true,
     renderBullet: function (index) {
       return `<button class=" hero__pagination-bullet swiper-pagination-bullet" type="button">
-      <span class="visually-hidden">кнопка пагинации туров слайд №${index + 1}
+      <span class="visually-hidden">кнопка пагинации туров слайд № ${index + 1}
       </span>
       </button>`;
     },

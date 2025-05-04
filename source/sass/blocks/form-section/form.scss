@@ -52,9 +52,9 @@
     outline: 1px solid $base-primary;
   }
 
-  &:invalid {
-    outline: 1px solid #ff121f;
-  }
+  // &:invalid {
+  //   outline: 1px solid #ff121f;
+  // }
 
   &:placeholder-shown {
     outline: 1px solid rgba(2, 102, 193, 0.1);
@@ -70,6 +70,14 @@
   display: none;
 }
 
+input:not(:focus):placeholder-shown + label {
+  display: block;
+}
+
+input:not(:placeholder-shown) + label {
+  display: none;
+}
+
 .form__input:focus::placeholder {
   color: $base-primary;
   opacity: 0.5;
@@ -81,6 +89,16 @@
   color: transparent;
   user-select: none;
 }
+
+.error {
+  outline: 1px solid #ff121f;
+
+  &:focus-visible,
+  &:hover {
+    outline: 1px solid #ff121f;
+  }
+}
+
 
 .form__label {
   position: absolute;
