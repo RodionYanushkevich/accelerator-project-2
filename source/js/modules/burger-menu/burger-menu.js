@@ -5,9 +5,6 @@ const button = header.querySelector('.header__button');
 const navigation = header.querySelector('.navigation');
 const navigationLinks = navigation.querySelectorAll('.navigation__link');
 
-
-// const widthCheck
-
 button.addEventListener('click', ()=>{
   button.classList.toggle('header__button--cross');
 
@@ -34,12 +31,10 @@ navigation.addEventListener('click', (evt)=>{
   }
 });
 
-window.addEventListener('resize', ()=> {
+const resizeListener = () => {
   if(window.innerWidth >= 1440) {
-
     header.classList.remove('header--menu-shown');
     body.classList.remove('body--overlay-shown');
-    // button.classList.toggle('header__button--cross');
     navigationLinks.forEach((link) => {
       link.classList.remove('navigation__link--hidden');
     });
@@ -49,7 +44,11 @@ window.addEventListener('resize', ()=> {
     button.classList.remove('header__button--cross');
 
     navigationLinks.forEach((link) => {
-      link.classList.remove('navigation__link--hidden');
+      link.classList.add('navigation__link--hidden');
     });
   }
-});
+
+};
+
+window.addEventListener('resize', resizeListener);
+resizeListener();

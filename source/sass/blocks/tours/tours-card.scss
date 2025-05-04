@@ -46,13 +46,12 @@
 
   display: flex;
   align-items: center;
+  min-height: 28px;
 
   justify-content: end;
   column-gap: 9px;
   padding: 8px 12px 8px 16px;
 
-  // min-width: 90px;
-  min-height: 28px;
   text-align: right;
 
   background-color: $base-secondary;
@@ -82,7 +81,6 @@
   background-color: transparent;
   background-size: 100%;
 
-  // min-width: 74px;
 
   &::before {
     content: "";
@@ -153,7 +151,6 @@
 .tours-card__details-title {
   grid-row: 1/2;
 
-  // margin-top: 1px;
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;

@@ -73,12 +73,11 @@
   position: relative;
   bottom: -0.2em;
   margin: 0;
+  margin-bottom: 25px;
+
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
-  margin-bottom: 25px;
-
-  // padding: 0 15px;
 
   @media ($tablet-breakpoint) {
     bottom: -0.2em;
@@ -103,8 +102,9 @@
   box-sizing: border-box;
   align-self: center;
   width: $mobile;
-  overflow: hidden;
   padding: 0 15px;
+
+  overflow: hidden;
 
   @media ($tablet-breakpoint) {
     width: 678px;

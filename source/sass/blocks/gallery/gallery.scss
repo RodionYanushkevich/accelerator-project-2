@@ -5,7 +5,6 @@
   padding: 20px 0 3px;
   row-gap: 10px;
 
-
   @media ($tablet-breakpoint) {
     padding: 40px 0 3px;
     row-gap: 20px;
@@ -26,8 +25,6 @@
 
   width: $mobile;
 
-  // margin-top: 21px;
-
   @media ($tablet-breakpoint) {
     margin-top: 1px;
     width: $tablet;
@@ -46,8 +43,6 @@
   width: 100%;
   display: flex;
 
-  // swiper
-  // gap: 5px;
   @media ($desktop-breakpoint) {
     gap: 5px;
   }
@@ -70,15 +65,16 @@
 
   @media ($tablet-breakpoint) {
     box-sizing: border-box;
+    padding: 0 0 0 45px;
+    max-width: 427px;
+
     font-size: 14px;
     line-height: 157%;
-    padding: 0 0 0 45px;
-
-    max-width: 427px;
   }
 
   @media ($desktop-breakpoint) {
     box-sizing: unset;
+
     font-size: 16px;
     line-height: 150%;
     max-width: 595px;

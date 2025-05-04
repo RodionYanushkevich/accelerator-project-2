@@ -156,7 +156,6 @@
     display: none;
   }
 
-  // Стили
   &:hover,
   &:focus-visible {
     outline: none;
@@ -170,6 +169,7 @@
 
   &:disabled {
     opacity: 0.2;
+    pointer-events: none;
   }
 
   &--cross {

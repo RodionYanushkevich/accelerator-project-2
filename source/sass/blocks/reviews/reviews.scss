@@ -7,18 +7,13 @@
 
   padding: 18px 15px 15px;
 
-  // padding: 21px 15px;
   row-gap: 17px;
 
-  // !!!
   overflow: hidden;
 
   @media ($tablet-breakpoint) {
-    // padding: 41px 45px;
     padding: 40px 45px 39px;
     row-gap: 25px;
-
-    // overflow: hidden;
   }
 
   @media ($desktop-breakpoint) {
@@ -42,18 +37,10 @@
   }
 }
 
-
 .reviews__title {
   @media ($desktop-breakpoint) {
     padding-top: 45px;
   }
-
-  //   &::before {
-
-  //     top: unset;
-  //     bottom: 24px;
-  //   }
-  // }
 }
 
 .reviews__swiper {

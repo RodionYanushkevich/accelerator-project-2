@@ -1,5 +1,6 @@
 .hero {
   width: 100%;
+
   color: $base-white;
 }
 
@@ -22,7 +23,9 @@
   display: flex;
   width: min-content;
   column-gap: 20px;
+
   z-index: 1;
+
   transform: translateX(-50%);
 
   @media ($desktop-breakpoint) {
@@ -37,6 +40,7 @@
   display: block;
   width: 16px;
   height: 16px;
+
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid $base-white;
@@ -57,10 +61,6 @@
   }
 
   &:focus-visible {
-    // background-color: inherit;
-
-    // border: 1px solid $base-white;
-
     outline-offset: 1px;
     outline: 1px solid rgba(255, 255, 255, 0.5);
   }
@@ -69,12 +69,4 @@
 .hero__pagination .swiper-pagination-bullet-active {
   background-color: $base-white;
   pointer-events: none;
-
-  // &:focus-visible {
-  //   background-color: $base-white;
-  //   border: 1px solid $base-white;
-
-  //   outline-offset: 1px;
-  //   outline: 1px solid rgba(255, 255, 255, 0.5);
-  // }
 }

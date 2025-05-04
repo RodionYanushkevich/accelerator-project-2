@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-
   width: 100%;
   max-width: $desktop;
 
@@ -33,7 +32,6 @@
   justify-content: center;
   padding: 10px;
   column-gap: 12px;
-
 
   font-weight: 700;
   font-size: 14px;
@@ -76,9 +74,10 @@
 
 .tours__swiper {
   align-self: center;
-  overflow: hidden;
   width: 290px;
   height: 416px;
+
+  overflow: hidden;
 
   @media ($tablet-breakpoint) {
     width: 678px;
@@ -106,4 +105,3 @@
     right: 161px;
   }
 }
-

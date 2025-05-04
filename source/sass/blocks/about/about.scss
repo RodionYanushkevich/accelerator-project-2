@@ -6,6 +6,7 @@
 
   row-gap: 25px;
   width: 100%;
+
   background-repeat: no-repeat;
   background-position: left top 20px;
   background-size: 434px;
@@ -26,7 +27,6 @@
     padding: 100px 120px 180px;
     min-height: unset;
 
-    // padding: 100px 120px 178px;
     grid-template-columns: calc(50% - 59px) 585px;
 
     background-position: left top 100px;
@@ -61,33 +61,33 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin: 0;
+  min-height: 55px;
 
+  margin: 0;
   padding-top: 19px;
 
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
 
-  min-height: 55px;
-
   @media ($tablet-breakpoint) {
-    font-size: 25px;
-    padding-top: 3px;
-    min-height: 67px;
-    align-self: end;
     flex-direction: row;
     align-items: center;
+    align-self: end;
+    padding-top: 3px;
+    min-height: 67px;
+
+    font-size: 25px;
   }
 
   @media ($desktop-breakpoint) {
     padding-top: 0;
     margin-bottom: 30px;
-    font-size: 35px;
     min-height: 80px;
     align-items: end;
-
     align-self: stretch;
+
+    font-size: 35px;
   }
 }
 
@@ -109,9 +109,6 @@
 
   @media ($desktop-breakpoint) {
     font-size: 55px;
-
-    // top: unset;
-    // bottom: 0;
   }
 }
 

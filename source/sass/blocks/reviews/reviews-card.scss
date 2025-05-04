@@ -6,6 +6,7 @@
   padding: 20px;
   justify-self: center;
   row-gap: 15px;
+
   outline: 1px solid $base-white;
   box-shadow: 0 0 20px rgba(28, 51, 116, 0.1);
 
@@ -42,6 +43,7 @@
 
   @media ($desktop-breakpoint) {
     padding-right: 20px;
+
     font-size: 14px;
     line-height: 157%;
   }

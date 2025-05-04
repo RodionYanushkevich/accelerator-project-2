@@ -52,10 +52,6 @@
     outline: 1px solid $base-primary;
   }
 
-  // &:invalid {
-  //   outline: 1px solid #ff121f;
-  // }
-
   &:placeholder-shown {
     outline: 1px solid rgba(2, 102, 193, 0.1);
   }
@@ -86,6 +82,7 @@ input:not(:placeholder-shown) + label {
 .form__input::placeholder {
   font-size: 16px;
   line-height: 16px;
+
   color: transparent;
   user-select: none;
 }
@@ -110,6 +107,7 @@ input:not(:placeholder-shown) + label {
 
   opacity: 0.5;
   transform: translateY(-50%);
+
   cursor: text;
 
   @media ($tablet-breakpoint) {

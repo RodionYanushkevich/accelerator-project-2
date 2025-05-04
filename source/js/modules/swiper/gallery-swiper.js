@@ -26,7 +26,6 @@ const initSwiper = () => {
   });
 };
 
-// проверка ?
 const destroySwiper = () => {
   if (gallerySwiper) {
     gallerySwiper.destroy(true, true);
