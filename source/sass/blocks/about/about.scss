@@ -15,7 +15,7 @@
     padding: 38px 48px 41px;
     display: grid;
     grid-template-columns: calc(50% + 66px) auto;
-
+    min-height: 742px;
 
     background-position: left top 174px;
     background-size: 542px;
@@ -24,6 +24,7 @@
 
   @media ($desktop-breakpoint) {
     padding: 100px 120px 180px;
+    min-height: unset;
 
     // padding: 100px 120px 178px;
     grid-template-columns: calc(50% - 59px) 585px;

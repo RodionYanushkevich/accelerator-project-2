@@ -58,32 +58,5 @@ const resizeListener = () => {
   }
 };
 
-
 window.addEventListener('resize', resizeListener);
 resizeListener();
-
-// const initSwiper = () => {
-//   advantagesSwiper = new Swiper('.advantages__swiper', {
-//     modules: [Navigation],
-//     loop:true,
-//     speed: 300,
-//     spaceBetween: 30,
-//     slidesPerView: 3,
-//     // slidesPerGroup:2,
-//     centeredSlides: true,
-//     initialSlide: 2,
-//     // allowTouchMove: false,
-//     // simulateTouch: false,
-//     on: {
-//       init: function() {
-//         this.slides.forEach((slide) => {
-//           Slides.push(slide.cloneNode(true));
-
-//         });
-//       }},
-//     navigation: {
-//       nextEl: '.advantages__swiper-button.swiper-button-next',
-//       prevEl: '.advantages__swiper-button.swiper-button-prev',
-//     },
-//   });
-// };

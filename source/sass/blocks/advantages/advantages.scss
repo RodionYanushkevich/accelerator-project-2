@@ -7,7 +7,6 @@
   row-gap: 22px;
   padding: 18px 15px 20px;
 
-  max-width: 2060px;
 
   @media ($tablet-breakpoint) {
     flex-wrap: wrap;
@@ -31,7 +30,15 @@
     row-gap: 50px;
     justify-content: start;
 
+    width: 100%;
     background: none;
+  }
+
+  @media (width > 1800px) {
+    padding: 100px 0 185px;
+    max-width: 2060px;
+
+    // overflow: hidden;
   }
 }
 
@@ -87,7 +94,11 @@
   }
 
   @media (width > 1440px) {
+    align-self: center;
     width: 100%;
+    max-width: 2060px;
+
+    // overflow: hidden;
   }
 }
 

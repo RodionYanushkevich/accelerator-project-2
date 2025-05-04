@@ -18,6 +18,8 @@ new Swiper('.reviews__swiper', {
       slidesPerView: 1,
     },
     1440: {
+      // slidesOffsetBefore: -20,
+      // slidesOffsetAfter: 20,
       spaceBetween: 120,
       slidesPerView: 1,
       simulateTouch: false,
