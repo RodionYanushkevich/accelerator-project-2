@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -6,18 +7,24 @@
 
   padding: 18px 15px 15px;
 
-  // padding: 21px 15px;
   row-gap: 17px;
 
+  overflow: hidden;
+
   @media ($tablet-breakpoint) {
-    // padding: 41px 45px;
-    padding: 41px 45px 39px;
+    padding: 40px 45px 39px;
     row-gap: 25px;
   }
 
   @media ($desktop-breakpoint) {
-    padding: 98px 120px 73px;
+    max-width: 1600px;
+    padding: 100px 120px 73px;
     row-gap: 28px;
+  }
+
+  @media (width > 1440px) {
+    padding: 100px 0 73px;
+    align-items: center;
   }
 }
 
@@ -30,14 +37,41 @@
   }
 }
 
-
 .reviews__title {
   @media ($desktop-breakpoint) {
-    padding-top: 52px;
+    padding-top: 45px;
+  }
+}
+
+.reviews__swiper {
+  @media ($tablet-breakpoint) {
+    width: 565px;
   }
 
-  &::before {
-    top: unset;
-    bottom: 24px;
+  @media ($desktop-breakpoint) {
+    width: 700px;
+  }
+
+  @media (width > 1440px) {
+    width: 1200px;
+    overflow: hidden;
+  }
+}
+
+.reviews__swiper-button {
+  top: 61px;
+  left: calc(50% + 302px);
+
+  @media ($desktop-breakpoint) {
+    top: 145px;
+    left: calc(50% + 563px);
+  }
+}
+
+.reviews__swiper-button.swiper-button-prev {
+  left: calc(50% + 261px);
+
+  @media ($desktop-breakpoint) {
+    left: calc(50% + 522px);
   }
 }

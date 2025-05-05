@@ -1,0 +1,49 @@
+.swiper-button {
+  position: absolute;
+  display: none;
+
+  @media ($tablet-breakpoint) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 37px;
+    height: 35px;
+
+    background-color: $base-secondary;
+    color: $base-white;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  &:hover {
+    // outline-offset: -1px;
+    border: 1px solid $primary-lighter;
+    color: $primary-lighter;
+    background-color: $base-white;
+  }
+
+  &:focus-visible {
+    color: $primary-lighter;
+    background-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    color: $base-white;
+    background-color: $primary-lighter;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    pointer-events: none;
+    color: $base-white;
+    border: none;
+  }
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+}

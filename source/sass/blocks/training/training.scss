@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 100%;
   max-width: $desktop;
   padding: 18px 15px 20px;
@@ -15,7 +16,7 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 40px 120px 48px;
+    padding: 43px 120px 48px;
     align-items: unset;
     row-gap: 56px;
   }
@@ -50,6 +51,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media ($desktop-breakpoint) {
+    width: 820px;
+  }
 }
 
 .training__title-container br {
@@ -64,22 +69,15 @@
   }
 }
 
-.training__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .training__swiper-title {
   position: relative;
   bottom: -0.2em;
   margin: 0;
-  padding: 0;
+  margin-bottom: 25px;
+
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
-  margin-bottom: 25px;
 
   @media ($tablet-breakpoint) {
     bottom: -0.2em;
@@ -99,3 +97,42 @@
   }
 }
 
+.training__swiper {
+  position: relative;
+  box-sizing: border-box;
+  align-self: center;
+  width: $mobile;
+  padding: 0 15px;
+
+  overflow: hidden;
+
+  @media ($tablet-breakpoint) {
+    width: 678px;
+    padding: 0;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 1200px;
+  }
+}
+
+.training__list-item {
+  @media ($tablet-breakpoint) {
+    width: 212.67px;
+  }
+}
+
+.training__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.training__swiper-button {
+  top: 0;
+  right: 0;
+}
+
+.training__swiper-button.swiper-button-prev {
+  right: 41px;
+}

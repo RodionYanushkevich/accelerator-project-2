@@ -1,4 +1,7 @@
 .advantages {
+  position: relative;
+
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   row-gap: 22px;
@@ -9,10 +12,10 @@
     row-gap: 51px;
     padding: 40px 45px 38px;
 
-    background-image: url("/img/background/cloud-tablet@1x.webp"), url("/img/background/cloud-tablet@1x.webp");
     background-position: top 266px left -446px, bottom 237px right -234px;
     background-repeat: no-repeat;
     background-size: 1200px 400px, 788px 263px;
+    background-image: url("/img/background/cloud-tablet@1x.webp"), url("/img/background/cloud-tablet@1x.webp");
 
     @media (resolution >= 2dppx) {
       background-image: url("/img/background/cloud-tablet@2x.webp"), url("/img/background/cloud-tablet@2x.webp");
@@ -22,33 +25,49 @@
   @media ($desktop-breakpoint) {
     padding: 100px 120px 185px;
 
+    overflow: hidden;
     row-gap: 50px;
     justify-content: start;
-    overflow: hidden;
+
+    width: 100%;
     background: none;
+  }
+
+  @media (width > 1800px) {
+    padding: 100px 0 185px;
+    max-width: 2060px;
   }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   row-gap: 15px;
 
+  list-style: none;
+
   @media ($tablet-breakpoint) {
     flex-direction: row;
     justify-content: center;
 
-    // gap: 33px;
     gap: 30px;
   }
 
   @media ($desktop-breakpoint) {
     flex-wrap: nowrap;
-    max-width: 1200px;
+    justify-content: unset;
+
+    gap: 0;
+  }
+}
+
+.advantages__list-item {
+  @media ($desktop-breakpoint) {
+    max-width: 380px;
+    width: 380px;
   }
 }
 
@@ -64,4 +83,32 @@
   &::before {
     top: 5px;
   }
+}
+
+.advantages__swiper {
+  @media ($desktop-breakpoint) {
+    box-sizing: border-box;
+    width: 1200px;
+  }
+
+  @media (width > 1440px) {
+    align-self: center;
+    width: 100%;
+    max-width: 2060px;
+  }
+}
+
+.advantages__swiper-button {
+  display: none;
+  bottom: 102px;
+  left: calc(50% + 2px);
+
+  @media ($desktop-breakpoint) {
+    display: flex;
+  }
+}
+
+.advantages__swiper-button.swiper-button-prev {
+  transform: translateX(-100%) rotate(180deg);
+  left: calc(50% - 2px);
 }

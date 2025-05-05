@@ -1,4 +1,5 @@
 .tours {
+  position: relative;
   box-sizing: border-box;
   padding: 20px 15px;
   display: flex;
@@ -12,7 +13,7 @@
   }
 
   @media ($desktop-breakpoint) {
-    padding: 103px 120px;
+    padding: 103px 120px 102px;
     row-gap: 50px;
     max-width: $desktop;
   }
@@ -31,7 +32,6 @@
   justify-content: center;
   padding: 10px;
   column-gap: 12px;
-
 
   font-weight: 700;
   font-size: 14px;
@@ -72,9 +72,36 @@
   }
 }
 
+.tours__swiper {
+  align-self: center;
+  width: 290px;
+  height: 416px;
 
-// BVBBBBBBBBUUUTOOONS HIDDEN
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
+  overflow: hidden;
+
+  @media ($tablet-breakpoint) {
+    width: 678px;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: 100%;
+  }
+}
+
+.tours__swiper-button {
+  top: 60px;
+  right: 45px;
+
+  @media ($desktop-breakpoint) {
+    top: 120px;
+    right: 120px;
+  }
+}
+
+.tours__swiper-button.swiper-button-prev {
+  right: 86px;
+
+  @media ($desktop-breakpoint) {
+    right: 161px;
+  }
 }

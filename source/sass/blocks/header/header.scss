@@ -1,6 +1,7 @@
 .header {
   box-sizing: border-box;
   display: grid;
+  min-width: $mobile;
 
   grid-template-columns: repeat(2, auto);
   grid-template-rows: min-content minmax(30px, min-content) 0fr;
@@ -10,6 +11,8 @@
 
   background-color: $base-secondary;
 
+  transition: grid-template-rows ease 300ms;
+
   @media ($tablet-breakpoint) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content  0fr;
@@ -18,12 +21,22 @@
   }
 
   @media ($desktop-breakpoint) {
+    position: unset;
     padding: 42px 120px 42px 152px;
     display: flex;
 
     justify-content: center;
     align-items: center;
     column-gap: 131px;
+  }
+
+  &--menu-shown {
+    grid-template-rows: min-content minmax(30px, min-content) 1fr;
+
+
+    @media ($tablet-breakpoint) {
+      grid-template-rows: min-content  1fr;
+    }
   }
 }
 
@@ -127,7 +140,7 @@
   grid-column: 1/2;
   border: none;
   display: block;
-
+  order: 0;
   width: 26px;
   height: 26px;
   background-color: transparent;
@@ -141,5 +154,25 @@
 
   @media ($desktop-breakpoint) {
     display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transform: translateY(2px);
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  &--cross {
+    background-image: url("/__spritemap#sprite-cross-view");
   }
 }

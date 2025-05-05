@@ -13,7 +13,7 @@
   @media ($desktop-breakpoint) {
     column-gap: 30px;
     flex-direction: row;
-    justify-self: center;
+    justify-content: center;
   }
 }
 
@@ -52,10 +52,6 @@
     outline: 1px solid $base-primary;
   }
 
-  &:invalid {
-    outline: 1px solid #ff121f;
-  }
-
   &:placeholder-shown {
     outline: 1px solid rgba(2, 102, 193, 0.1);
   }
@@ -70,6 +66,14 @@
   display: none;
 }
 
+input:not(:focus):placeholder-shown + label {
+  display: block;
+}
+
+input:not(:placeholder-shown) + label {
+  display: none;
+}
+
 .form__input:focus::placeholder {
   color: $base-primary;
   opacity: 0.5;
@@ -78,9 +82,20 @@
 .form__input::placeholder {
   font-size: 16px;
   line-height: 16px;
+
   color: transparent;
   user-select: none;
 }
+
+.error {
+  outline: 1px solid #ff121f;
+
+  &:focus-visible,
+  &:hover {
+    outline: 1px solid #ff121f;
+  }
+}
+
 
 .form__label {
   position: absolute;
@@ -92,6 +107,7 @@
 
   opacity: 0.5;
   transform: translateY(-50%);
+
   cursor: text;
 
   @media ($tablet-breakpoint) {

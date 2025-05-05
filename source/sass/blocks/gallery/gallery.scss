@@ -1,9 +1,9 @@
 .gallery {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 20px 0 3px;
   row-gap: 10px;
-  max-width: $desktop;
 
   @media ($tablet-breakpoint) {
     padding: 40px 0 3px;
@@ -11,6 +11,7 @@
   }
 
   @media ($desktop-breakpoint) {
+    max-width: $desktop;
     padding: 100px 0 3px;
     row-gap: 26px;
   }
@@ -19,16 +20,18 @@
 .gallery__swiper {
   padding: 0;
   margin-top: 21px;
-
+  overflow: hidden;
   align-self: center;
 
-  // margin-top: 21px;
+  width: $mobile;
 
   @media ($tablet-breakpoint) {
     margin-top: 1px;
+    width: $tablet;
   }
 
   @media ($desktop-breakpoint) {
+    width: unset;
     margin-top: 20px;
   }
 }
@@ -40,42 +43,10 @@
   width: 100%;
   display: flex;
 
-  // swiper
-  gap: 5px;
-}
-
-// !!!!! чужой блок
-.gallery-card:nth-child(even) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.gallery-card {
-  &:nth-child(n+3) {
-    display: none;
-  }
-
-  @media ($tablet-breakpoint) {
-    &:nth-child(n+3) {
-      display: flex;
-    }
-
-    &:nth-child(n+4) {
-      display: none;
-    }
-  }
-
   @media ($desktop-breakpoint) {
-    display: flex;
-
-    &:nth-child(n+4) {
-      display: flex;
-    }
+    gap: 5px;
   }
 }
-
-// !!!!!
 
 .gallery br {
   display: inline;
@@ -94,15 +65,16 @@
 
   @media ($tablet-breakpoint) {
     box-sizing: border-box;
+    padding: 0 0 0 45px;
+    max-width: 427px;
+
     font-size: 14px;
     line-height: 157%;
-    padding: 0 0 0 45px;
-
-    max-width: 427px;
   }
 
   @media ($desktop-breakpoint) {
     box-sizing: unset;
+
     font-size: 16px;
     line-height: 150%;
     max-width: 595px;
@@ -120,4 +92,23 @@
   @media ($desktop-breakpoint) {
     padding: 0 120px;
   }
+}
+
+.gallery__swiper-button {
+  display: none;
+  top: 146px;
+  left: calc(50% + 302px);
+
+  @media ($tablet-breakpoint) {
+    display: flex;
+  }
+
+  @media ($desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.gallery__swiper-button.swiper-button-prev {
+  transform: translateX(-100%) rotate(180deg);
+  left: calc(50% + 298px);
 }

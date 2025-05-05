@@ -9,9 +9,6 @@
   outline: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $base-white;
 
-  &:last-child h3 {
-    margin-left: -4px;
-  }
 
   &--security::before {
     background-image: url("/__spritemap#sprite-security-icon-view");
@@ -36,20 +33,19 @@
 
   @media ($tablet-breakpoint) {
     padding: 30px 20px;
-    min-width: 324px;
-    max-width: 324px;
     min-height: 340px;
+    width: 324px;
+
     row-gap: 15px;
   }
 
   @media ($desktop-breakpoint) {
     padding: 40px 20px;
-
-    min-width: unset;
-    max-width: unset;
+    max-width: 380px;
+    width: 380px;
     row-gap: 16px;
 
-    min-height: unset;
+    min-height: 329px;
   }
 }
 

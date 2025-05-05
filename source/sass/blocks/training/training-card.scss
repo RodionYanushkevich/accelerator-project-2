@@ -7,35 +7,25 @@
   padding: 15px;
 
   width: 290px;
+  min-height: 356px;
+
+  outline-offset: -1px;
   outline: 1px solid rgba(2, 102, 193, 0.1);
+
+  background-color: $base-white;
 
   @media ($tablet-breakpoint) {
     width: 212.67px;
+    height: 388px;
     padding: 15px 15px 47px;
   }
 
   @media ($desktop-breakpoint) {
+    height: 356px;
     width: 285px;
     padding: 15px 15px 31px;
   }
 }
-
-.training-card {
-  &:not(:nth-child(3)) {
-    display: none;
-
-    @media ($tablet-breakpoint) {
-      display: flex;
-    }
-  }
-
-  @media ($tablet-breakpoint) {
-    &:not(:nth-child(1)) {
-      display: none;
-    }
-  }
-}
-
 
 .training-card__figure {
   margin: 0;
@@ -49,14 +39,23 @@
 .training-card__image {
   color: $base-white;
   background-color: #b4b2b3;
+
+  @media ($tablet-breakpoint) {
+    width: 182.7px;
+    height: 200px;
+  }
+
+  @media ($desktop-breakpoint) {
+    width: unset;
+    height: unset;
+  }
 }
 
 .training-card__figure h4 {
   margin: 0;
   padding: 0;
-
-
   align-self: start;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;

@@ -58,13 +58,12 @@
   }
 }
 
-
 .contacts__list {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   padding: 0 15px;
-  margin: 18px 0;
+  margin: 18px 0 17px;
 
   list-style: none;
 
@@ -187,5 +186,12 @@
     grid-row: 1/4;
     align-self: center;
     justify-self: center;
+  }
+}
+
+.contacts__map-image {
+  @media (width <= 1440px) {
+    width: 100%;
+    height: 100%;
   }
 }

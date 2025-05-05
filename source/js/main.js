@@ -1,4 +1,13 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+import 'swiper/css';
+
+import '../js/modules/util/util.js';
+import '../js/modules/burger-menu/burger-menu.js';
+
+import '../js/modules/swiper/hero-swiper.js';
+import '../js/modules/swiper/tours-swiper.js';
+import '../js/modules/swiper/traning-swiper.js';
+import '../js/modules/swiper/reviews-swiper.js';
+import '../js/modules/swiper/gallery-swiper.js';
+import '../js/modules/swiper/advantages-swiper.js';
+
+import '../js/modules/form/form-validation.js';

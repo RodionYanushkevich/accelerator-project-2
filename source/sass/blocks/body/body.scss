@@ -1,18 +1,25 @@
-.body {
-  min-width: $mobile;
+.body__main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+
   background-size: 346px;
-  background-position: left calc(50% + 192px) top 678px;
+  background-position: left calc(50% + 192px) top 578px;
   background-repeat: no-repeat;
 
   background-image: url("../img/background/background-mountain-mobile@1x.webp");
 
   @media ($tablet-breakpoint) {
     background-size: 602px;
-    background-position: right -177px top 1124px;
+    background-position: right -177px top 1039px;
+
     background-image: url("../img/background/background-mountain-tablet@1x.webp");
   }
 
   @media ($desktop-breakpoint) {
+    background-position: right 0 top 674px;
     background-image: url("../img/background/background-mountain-desktop@1x.webp");
   }
 
@@ -27,4 +34,27 @@
       background-image: url("../img/background/background-mountain-desktop@2x.webp");
     }
   }
+}
+
+.body--overlay-shown {
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(45, 56, 63, 0.6);
+    z-index: 9;
+  }
+}
+
+.body__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }

@@ -1,9 +1,7 @@
 .footer-navigation {
   box-sizing: border-box;
   display: grid;
-
   width: 100%;
-
   justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
@@ -17,12 +15,15 @@
 
   @media ($tablet-breakpoint) {
     display: flex;
+    flex-wrap: wrap;
     width: unset;
-    column-gap: 20px;
+    column-gap: 10px;
+
+    // column-gap: 20px;
   }
 
   @media ($desktop-breakpoint) {
-    column-gap: 25px;
+    column-gap: 20px;
   }
 }
 
@@ -59,12 +60,6 @@
   text-decoration: none;
   padding: 3px 5px;
 
-  // width: auto;
-
-  // @media ($tablet-breakpoint) {
-  //   padding: 3px;
-  // }
-
   @media ($desktop-breakpoint) {
     font-size: 16px;
   }
@@ -89,4 +84,3 @@
     color: #999999;
   }
 }
-

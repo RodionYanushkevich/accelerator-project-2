@@ -1,21 +1,17 @@
-.reviews-card:not(:first-child) {
-  display: none;
-}
-
 .reviews-card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 290px;
   padding: 20px;
-
+  justify-self: center;
   row-gap: 15px;
+
   outline: 1px solid $base-white;
   box-shadow: 0 0 20px rgba(28, 51, 116, 0.1);
 
   @media ($tablet-breakpoint) {
-    align-self: start;
-    width: unset;
+    width: 565px;
     display: grid;
     grid-template-columns: 186px 1fr;
     grid-template-rows: repeat(2, min-content);
@@ -28,6 +24,8 @@
 
   @media ($desktop-breakpoint) {
     max-width: 700px;
+    width: 700px;
+
     grid-template-columns: repeat(2, auto);
 
     column-gap: 30px;
@@ -44,6 +42,8 @@
   line-height: 150%;
 
   @media ($desktop-breakpoint) {
+    padding-right: 20px;
+
     font-size: 14px;
     line-height: 157%;
   }
@@ -93,6 +93,13 @@
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+.reviews-card__wrapper p {
+  padding: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
 }
 
 .reviews-card__title {
