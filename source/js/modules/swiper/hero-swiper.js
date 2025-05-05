@@ -1,19 +1,39 @@
 import Swiper from 'swiper';
 
-import {EffectFade, Pagination} from 'swiper/modules';
+import {EffectFade, Pagination, A11y} from 'swiper/modules';
 
 import 'swiper/css/effect-fade';
 
 const paginationContainer = document.querySelector('.hero__pagination.swiper-pagination');
 
 new Swiper('.hero__swiper', {
-  modules: [EffectFade, Pagination],
+  modules: [EffectFade, Pagination, A11y],
   loop:true,
   speed: 800,
   slidesPerView: 1,
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
+  },
+  a11y: {
+    enabled: true,
+  },
+  on: {
+    init: function () {
+      this.slides.forEach((slide) => {
+        if (!slide.classList.contains('swiper-slide-active')) {
+          slide.children[0].children[2].setAttribute('tabindex', '-1');
+        }
+      });
+    },
+    slideChange: function () {
+      this.slides.forEach((slide) => {
+        slide.children[0].children[2].setAttribute('tabindex', '-1');
+      });
+
+      const activeSlide = this.slides[this.activeIndex];
+      activeSlide.children[0].children[2].setAttribute('tabindex', '0');
+    },
   },
   pagination: {
     el: paginationContainer,
